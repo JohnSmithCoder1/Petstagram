@@ -27,4 +27,10 @@ enum JsonData {
         }
     ]
     """
+    
+    static let badJson = """
+    [
+        "bad json"
+    ]
+    """
 }
