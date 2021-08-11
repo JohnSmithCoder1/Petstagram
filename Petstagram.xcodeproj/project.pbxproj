@@ -15,6 +15,7 @@
 		05C164E826C434AE00A28E53 /* PetstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164E726C434AE00A28E53 /* PetstagramUITests.swift */; };
 		05C164F626C4367300A28E53 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164F526C4367300A28E53 /* Post.swift */; };
 		05C164F826C4373B00A28E53 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164F726C4373B00A28E53 /* APIRequest.swift */; };
+		05C164FA26C4387D00A28E53 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164F926C4387D00A28E53 /* PostRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		05C164E926C434AE00A28E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05C164F526C4367300A28E53 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		05C164F726C4373B00A28E53 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		05C164F926C4387D00A28E53 /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				05C164CC26C434AA00A28E53 /* ContentView.swift */,
 				05C164F526C4367300A28E53 /* Post.swift */,
 				05C164F726C4373B00A28E53 /* APIRequest.swift */,
+				05C164F926C4387D00A28E53 /* PostRequest.swift */,
 				05C164CE26C434AD00A28E53 /* Assets.xcassets */,
 				05C164D326C434AD00A28E53 /* Info.plist */,
 				05C164D026C434AD00A28E53 /* Preview Content */,
@@ -267,6 +270,7 @@
 			files = (
 				05C164F626C4367300A28E53 /* Post.swift in Sources */,
 				05C164CD26C434AA00A28E53 /* ContentView.swift in Sources */,
+				05C164FA26C4387D00A28E53 /* PostRequest.swift in Sources */,
 				05C164F826C4373B00A28E53 /* APIRequest.swift in Sources */,
 				05C164CB26C434AA00A28E53 /* PetstagramApp.swift in Sources */,
 			);
