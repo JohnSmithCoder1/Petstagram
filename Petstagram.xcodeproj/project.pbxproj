@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		05C1650026C45A3100A28E53 /* PostRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164FF26C45A3100A28E53 /* PostRequestTests.swift */; };
 		05C1650226C45A7A00A28E53 /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1650126C45A7A00A28E53 /* JsonData.swift */; };
 		05C1650426C461ED00A28E53 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1650326C461ED00A28E53 /* APIClientTests.swift */; };
+		05C1650726C4669C00A28E53 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = 05C1650626C4669C00A28E53 /* Swifter */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05C1650726C4669C00A28E53 /* Swifter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +169,9 @@
 			dependencies = (
 			);
 			name = Petstagram;
+			packageProductDependencies = (
+				05C1650626C4669C00A28E53 /* Swifter */,
+			);
 			productName = Petstagram;
 			productReference = 05C164C726C434AA00A28E53 /* Petstagram.app */;
 			productType = "com.apple.product-type.application";
@@ -239,6 +244,9 @@
 				Base,
 			);
 			mainGroup = 05C164BE26C434AA00A28E53;
+			packageReferences = (
+				05C1650526C4669C00A28E53 /* XCRemoteSwiftPackageReference "swifter" */,
+			);
 			productRefGroup = 05C164C826C434AA00A28E53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -612,6 +620,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		05C1650526C4669C00A28E53 /* XCRemoteSwiftPackageReference "swifter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/httpswift/swifter.git";
+			requirement = {
+				branch = stable;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		05C1650626C4669C00A28E53 /* Swifter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05C1650526C4669C00A28E53 /* XCRemoteSwiftPackageReference "swifter" */;
+			productName = Swifter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 05C164BF26C434AA00A28E53 /* Project object */;
 }
