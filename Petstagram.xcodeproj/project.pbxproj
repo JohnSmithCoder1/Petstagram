@@ -19,6 +19,7 @@
 		05C164FE26C43ACF00A28E53 /* APIEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164FD26C43ACF00A28E53 /* APIEnvironment.swift */; };
 		05C1650026C45A3100A28E53 /* PostRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164FF26C45A3100A28E53 /* PostRequestTests.swift */; };
 		05C1650226C45A7A00A28E53 /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1650126C45A7A00A28E53 /* JsonData.swift */; };
+		05C1650426C461ED00A28E53 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1650326C461ED00A28E53 /* APIClientTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		05C164FD26C43ACF00A28E53 /* APIEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnvironment.swift; sourceTree = "<group>"; };
 		05C164FF26C45A3100A28E53 /* PostRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestTests.swift; sourceTree = "<group>"; };
 		05C1650126C45A7A00A28E53 /* JsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonData.swift; sourceTree = "<group>"; };
+		05C1650326C461ED00A28E53 /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			children = (
 				05C164DE26C434AD00A28E53 /* Info.plist */,
 				05C164FF26C45A3100A28E53 /* PostRequestTests.swift */,
+				05C1650326C461ED00A28E53 /* APIClientTests.swift */,
 				05C1650126C45A7A00A28E53 /* JsonData.swift */,
 			);
 			path = PetstagramTests;
@@ -292,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05C1650426C461ED00A28E53 /* APIClientTests.swift in Sources */,
 				05C1650026C45A3100A28E53 /* PostRequestTests.swift in Sources */,
 				05C1650226C45A7A00A28E53 /* JsonData.swift in Sources */,
 			);
