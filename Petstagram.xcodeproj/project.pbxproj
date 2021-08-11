@@ -111,16 +111,9 @@
 		05C164C926C434AA00A28E53 /* Petstagram */ = {
 			isa = PBXGroup;
 			children = (
-				05C164CA26C434AA00A28E53 /* PetstagramApp.swift */,
-				05C164CC26C434AA00A28E53 /* ContentView.swift */,
-				05C164F526C4367300A28E53 /* Post.swift */,
-				05C164F726C4373B00A28E53 /* APIRequest.swift */,
-				05C164F926C4387D00A28E53 /* PostRequest.swift */,
-				05C164FB26C4397F00A28E53 /* APIClient.swift */,
-				05C164FD26C43ACF00A28E53 /* APIEnvironment.swift */,
-				05C164CE26C434AD00A28E53 /* Assets.xcassets */,
-				05C164D326C434AD00A28E53 /* Info.plist */,
-				05C164D026C434AD00A28E53 /* Preview Content */,
+				05C1650826C4823300A28E53 /* UI */,
+				05C1650A26C4825E00A28E53 /* Service Layer */,
+				05C1650D26C482A000A28E53 /* Supporting Files */,
 			);
 			path = Petstagram;
 			sourceTree = "<group>";
@@ -136,10 +129,10 @@
 		05C164DB26C434AD00A28E53 /* PetstagramTests */ = {
 			isa = PBXGroup;
 			children = (
-				05C164DE26C434AD00A28E53 /* Info.plist */,
-				05C164FF26C45A3100A28E53 /* PostRequestTests.swift */,
 				05C1650326C461ED00A28E53 /* APIClientTests.swift */,
+				05C164FF26C45A3100A28E53 /* PostRequestTests.swift */,
 				05C1650126C45A7A00A28E53 /* JsonData.swift */,
+				05C164DE26C434AD00A28E53 /* Info.plist */,
 			);
 			path = PetstagramTests;
 			sourceTree = "<group>";
@@ -151,6 +144,61 @@
 				05C164E926C434AE00A28E53 /* Info.plist */,
 			);
 			path = PetstagramUITests;
+			sourceTree = "<group>";
+		};
+		05C1650826C4823300A28E53 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				05C164CC26C434AA00A28E53 /* ContentView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		05C1650926C4824700A28E53 /* Network Engine */ = {
+			isa = PBXGroup;
+			children = (
+				05C164FB26C4397F00A28E53 /* APIClient.swift */,
+				05C164F726C4373B00A28E53 /* APIRequest.swift */,
+				05C164FD26C43ACF00A28E53 /* APIEnvironment.swift */,
+			);
+			path = "Network Engine";
+			sourceTree = "<group>";
+		};
+		05C1650A26C4825E00A28E53 /* Service Layer */ = {
+			isa = PBXGroup;
+			children = (
+				05C1650926C4824700A28E53 /* Network Engine */,
+				05C1650B26C4828300A28E53 /* Models */,
+				05C1650C26C4828F00A28E53 /* Requests */,
+			);
+			path = "Service Layer";
+			sourceTree = "<group>";
+		};
+		05C1650B26C4828300A28E53 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				05C164F526C4367300A28E53 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		05C1650C26C4828F00A28E53 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				05C164F926C4387D00A28E53 /* PostRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		05C1650D26C482A000A28E53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05C164CA26C434AA00A28E53 /* PetstagramApp.swift */,
+				05C164CE26C434AD00A28E53 /* Assets.xcassets */,
+				05C164D326C434AD00A28E53 /* Info.plist */,
+				05C164D026C434AD00A28E53 /* Preview Content */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
