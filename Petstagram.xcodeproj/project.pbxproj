@@ -21,6 +21,12 @@
 		05C1650226C45A7A00A28E53 /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1650126C45A7A00A28E53 /* JsonData.swift */; };
 		05C1650426C461ED00A28E53 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1650326C461ED00A28E53 /* APIClientTests.swift */; };
 		05C1650726C4669C00A28E53 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = 05C1650626C4669C00A28E53 /* Swifter */; };
+		05C1650F26C485FC00A28E53 /* LoginSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1650E26C485FC00A28E53 /* LoginSignupView.swift */; };
+		05C1651226C4863C00A28E53 /* Color+Petstagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1651126C4863C00A28E53 /* Color+Petstagram.swift */; };
+		05C1651426C4868700A28E53 /* UserAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1651326C4868700A28E53 /* UserAuthentication.swift */; };
+		05C1651626C486BA00A28E53 /* UserRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1651526C486BA00A28E53 /* UserRequests.swift */; };
+		05C1651926C4A0CF00A28E53 /* CoolStoryregular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C1651826C4A0CF00A28E53 /* CoolStoryregular.ttf */; };
+		05C1651B26C4A13200A28E53 /* AppTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1651A26C4A13200A28E53 /* AppTitle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +66,12 @@
 		05C164FF26C45A3100A28E53 /* PostRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestTests.swift; sourceTree = "<group>"; };
 		05C1650126C45A7A00A28E53 /* JsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonData.swift; sourceTree = "<group>"; };
 		05C1650326C461ED00A28E53 /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
+		05C1650E26C485FC00A28E53 /* LoginSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupView.swift; sourceTree = "<group>"; };
+		05C1651126C4863C00A28E53 /* Color+Petstagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Petstagram.swift"; sourceTree = "<group>"; };
+		05C1651326C4868700A28E53 /* UserAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthentication.swift; sourceTree = "<group>"; };
+		05C1651526C486BA00A28E53 /* UserRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequests.swift; sourceTree = "<group>"; };
+		05C1651826C4A0CF00A28E53 /* CoolStoryregular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoolStoryregular.ttf; sourceTree = "<group>"; };
+		05C1651A26C4A13200A28E53 /* AppTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				05C164CC26C434AA00A28E53 /* ContentView.swift */,
+				05C1650E26C485FC00A28E53 /* LoginSignupView.swift */,
+				05C1651026C4860F00A28E53 /* Helpers */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -177,6 +191,7 @@
 		05C1650B26C4828300A28E53 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				05C1651326C4868700A28E53 /* UserAuthentication.swift */,
 				05C164F526C4367300A28E53 /* Post.swift */,
 			);
 			path = Models;
@@ -185,6 +200,7 @@
 		05C1650C26C4828F00A28E53 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				05C1651526C486BA00A28E53 /* UserRequests.swift */,
 				05C164F926C4387D00A28E53 /* PostRequest.swift */,
 			);
 			path = Requests;
@@ -196,9 +212,19 @@
 				05C164CA26C434AA00A28E53 /* PetstagramApp.swift */,
 				05C164CE26C434AD00A28E53 /* Assets.xcassets */,
 				05C164D326C434AD00A28E53 /* Info.plist */,
+				05C1651826C4A0CF00A28E53 /* CoolStoryregular.ttf */,
 				05C164D026C434AD00A28E53 /* Preview Content */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05C1651026C4860F00A28E53 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				05C1651A26C4A13200A28E53 /* AppTitle.swift */,
+				05C1651126C4863C00A28E53 /* Color+Petstagram.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05C1651926C4A0CF00A28E53 /* CoolStoryregular.ttf in Resources */,
 				05C164D226C434AD00A28E53 /* Preview Assets.xcassets in Resources */,
 				05C164CF26C434AD00A28E53 /* Assets.xcassets in Resources */,
 			);
@@ -337,9 +364,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05C1651B26C4A13200A28E53 /* AppTitle.swift in Sources */,
+				05C1651426C4868700A28E53 /* UserAuthentication.swift in Sources */,
+				05C1651626C486BA00A28E53 /* UserRequests.swift in Sources */,
 				05C164F626C4367300A28E53 /* Post.swift in Sources */,
 				05C164CD26C434AA00A28E53 /* ContentView.swift in Sources */,
+				05C1650F26C485FC00A28E53 /* LoginSignupView.swift in Sources */,
 				05C164FE26C43ACF00A28E53 /* APIEnvironment.swift in Sources */,
+				05C1651226C4863C00A28E53 /* Color+Petstagram.swift in Sources */,
 				05C164FA26C4387D00A28E53 /* PostRequest.swift in Sources */,
 				05C164F826C4373B00A28E53 /* APIRequest.swift in Sources */,
 				05C164CB26C434AA00A28E53 /* PetstagramApp.swift in Sources */,
@@ -432,6 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Petstagram/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -487,6 +520,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Petstagram/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -503,10 +537,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Petstagram/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Petstagram/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = 7YNF79H478;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Petstagram/Info.plist;
+				INFOPLIST_FILE = "Petstagram/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -525,10 +559,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Petstagram/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Petstagram/Supporting Files/Preview Content\"";
 				DEVELOPMENT_TEAM = 7YNF79H478;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Petstagram/Info.plist;
+				INFOPLIST_FILE = "Petstagram/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
