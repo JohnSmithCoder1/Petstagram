@@ -26,7 +26,7 @@
 		05C1651426C4868700A28E53 /* UserAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1651326C4868700A28E53 /* UserAuthentication.swift */; };
 		05C1651626C486BA00A28E53 /* UserRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1651526C486BA00A28E53 /* UserRequests.swift */; };
 		05C1651926C4A0CF00A28E53 /* CoolStoryregular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05C1651826C4A0CF00A28E53 /* CoolStoryregular.ttf */; };
-		05C1651B26C4A13200A28E53 /* AppTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1651A26C4A13200A28E53 /* AppTitle.swift */; };
+		05C1651D26C4A18500A28E53 /* AppTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1651C26C4A18500A28E53 /* AppTitle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +71,7 @@
 		05C1651326C4868700A28E53 /* UserAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthentication.swift; sourceTree = "<group>"; };
 		05C1651526C486BA00A28E53 /* UserRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequests.swift; sourceTree = "<group>"; };
 		05C1651826C4A0CF00A28E53 /* CoolStoryregular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoolStoryregular.ttf; sourceTree = "<group>"; };
-		05C1651A26C4A13200A28E53 /* AppTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTitle.swift; sourceTree = "<group>"; };
+		05C1651C26C4A18500A28E53 /* AppTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,7 +221,7 @@
 		05C1651026C4860F00A28E53 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				05C1651A26C4A13200A28E53 /* AppTitle.swift */,
+				05C1651C26C4A18500A28E53 /* AppTitle.swift */,
 				05C1651126C4863C00A28E53 /* Color+Petstagram.swift */,
 			);
 			path = Helpers;
@@ -364,7 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05C1651B26C4A13200A28E53 /* AppTitle.swift in Sources */,
+				05C1651D26C4A18500A28E53 /* AppTitle.swift in Sources */,
 				05C1651426C4868700A28E53 /* UserAuthentication.swift in Sources */,
 				05C1651626C486BA00A28E53 /* UserRequests.swift in Sources */,
 				05C164F626C4367300A28E53 /* Post.swift in Sources */,

@@ -8,14 +8,91 @@
 import SwiftUI
 import Combine
 
+enum AuthState {
+    case signUp
+    case signIn
+}
+
 struct LoginSignupView: View {
+    @State var authState: AuthState = .signUp
+    @State private var username = ""
+    @State private var email = ""
+    @State private var password = ""
     @State private var validationError = false
     @State private var requestError = false
     @State private var requestErrorText: String = ""
     @State var networkOperation: AnyCancellable?
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 55) {
+            AppTitle()
+            
+            let columns: [GridItem] = [
+                GridItem(.flexible(), spacing: 8, alignment: .leading), GridItem(.flexible())
+            ]
+            
+            LazyVGrid(columns: columns) {
+                Text("Username")
+                TextField("Username", text: $username)
+                    .textContentType(.username)
+                    .autocapitalization(.none)
+                
+                if authState == .signUp {
+                    Text("Email")
+                    TextField("Email", text: $email)
+                        .textContentType(.emailAddress)
+                }
+                
+                Text("Password")
+                SecureField("Password", text: $password)
+                    .textContentType(.password)
+            }
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .alert(isPresented: $validationError) {
+                if authState == .signUp {
+                    return Alert(title: Text("Please complete the username, email, and password fields"))
+                } else {
+                    return Alert(title: Text("Please complete the username and password fields"))
+                }
+            }
+            
+            VStack(spacing: 8) {
+                Button(action: {
+                    doAuth()
+                }) {
+                    HStack {
+                        Spacer()
+                        Text(authState == .signUp ? "Sign Up" : "Sign In")
+                            .foregroundColor(.white)
+                        Spacer()
+                    }
+                }
+                .padding([.top, .bottom], 10)
+                .background(Color.accentGreen.opacity(0.2))
+                .clipShape(Capsule())
+                .alert(isPresented: $requestError) {
+                    Alert(title: Text(requestErrorText))
+                }
+                
+                Button(action: {
+                    withAnimation { toggleState() }
+                }) {
+                    HStack {
+                        Spacer()
+                        Text(authState == .signUp ? "Sign In" : "Sign Up")
+                        Spacer()
+                    }
+                }
+                .padding([.top, .bottom], 10)
+                .overlay(Capsule().stroke(Color.accentGreen, lineWidth: 2))
+            }
+            .padding(.horizontal, 50)
+            .accentColor(.accentGreen)
+            
+            Spacer()
+                .frame(minHeight: 0, maxHeight: 100)
+        }
+        .padding(.horizontal)
     }
     
     private func toggleState() {
