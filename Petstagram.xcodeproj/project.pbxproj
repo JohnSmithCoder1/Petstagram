@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		05C164CB26C434AA00A28E53 /* PetstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164CA26C434AA00A28E53 /* PetstagramApp.swift */; };
-		05C164CD26C434AA00A28E53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164CC26C434AA00A28E53 /* ContentView.swift */; };
+		05C164CD26C434AA00A28E53 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164CC26C434AA00A28E53 /* MainView.swift */; };
 		05C164CF26C434AD00A28E53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C164CE26C434AD00A28E53 /* Assets.xcassets */; };
 		05C164D226C434AD00A28E53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C164D126C434AD00A28E53 /* Preview Assets.xcassets */; };
 		05C164E826C434AE00A28E53 /* PetstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164E726C434AE00A28E53 /* PetstagramUITests.swift */; };
@@ -49,7 +49,7 @@
 /* Begin PBXFileReference section */
 		05C164C726C434AA00A28E53 /* Petstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Petstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C164CA26C434AA00A28E53 /* PetstagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetstagramApp.swift; sourceTree = "<group>"; };
-		05C164CC26C434AA00A28E53 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		05C164CC26C434AA00A28E53 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		05C164CE26C434AD00A28E53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05C164D126C434AD00A28E53 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		05C164D326C434AD00A28E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 		05C1650826C4823300A28E53 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				05C164CC26C434AA00A28E53 /* ContentView.swift */,
+				05C164CC26C434AA00A28E53 /* MainView.swift */,
 				05C1650E26C485FC00A28E53 /* LoginSignupView.swift */,
 				05C1651026C4860F00A28E53 /* Helpers */,
 			);
@@ -368,7 +368,7 @@
 				05C1651426C4868700A28E53 /* UserAuthentication.swift in Sources */,
 				05C1651626C486BA00A28E53 /* UserRequests.swift in Sources */,
 				05C164F626C4367300A28E53 /* Post.swift in Sources */,
-				05C164CD26C434AA00A28E53 /* ContentView.swift in Sources */,
+				05C164CD26C434AA00A28E53 /* MainView.swift in Sources */,
 				05C1650F26C485FC00A28E53 /* LoginSignupView.swift in Sources */,
 				05C164FE26C43ACF00A28E53 /* APIEnvironment.swift in Sources */,
 				05C1651226C4863C00A28E53 /* Color+Petstagram.swift in Sources */,
