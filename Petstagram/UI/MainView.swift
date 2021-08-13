@@ -33,7 +33,7 @@ struct MainView: View {
     
     var body: some View {
         TabView {
-            Text("Tab Content 1")
+            FeedView()
                 .tabItem {
                     Image("home")
                     Text("Home")
