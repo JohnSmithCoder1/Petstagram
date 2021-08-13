@@ -19,30 +19,46 @@ struct MainView: View {
         .publisher(for: .signOutNotification)
         .receive(on: RunLoop.main)
     
-//    var publisher: AnyCancellable = {
-//        let client = APIClient()
-//        let request = PostRequest()
-//
-//        return client.publisherForRequest(request)
-//            .sink(receiveCompletion: { result in
-//                print(result)
-//            }, receiveValue: { newPosts in
-//                print(newPosts)
-//            })
-//    }()
-     
+    //    var publisher: AnyCancellable = {
+    //        let client = APIClient()
+    //        let request = PostRequest()
+    //
+    //        return client.publisherForRequest(request)
+    //            .sink(receiveCompletion: { result in
+    //                print(result)
+    //            }, receiveValue: { newPosts in
+    //                print(newPosts)
+    //            })
+    //    }()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-            .fullScreenCover(isPresented: $showingLogin) {
-                LoginSignupView()
-            }
-            .onReceive(signInPublisher) { _ in
-                showingLogin = false
-            }
-            .onReceive(signOutPublisher) { _ in
-                showingLogin = true
-            }
+        TabView {
+            Text("Tab Content 1")
+                .tabItem {
+                    Image("home")
+                    Text("Home")
+                }.tag(0)
+            Text("Tab Content 2")
+                .tabItem {
+                    Image("photo")
+                    Text("Post")
+                }.tag(1)
+            Text("Tab Content 3")
+                .tabItem {
+                    Image("profile")
+                    Text("Profile")
+                }.tag(2)
+        }
+        .accentColor(.accentGreen)
+        .fullScreenCover(isPresented: $showingLogin) {
+            LoginSignupView()
+        }
+        .onReceive(signInPublisher) { _ in
+            showingLogin = false
+        }
+        .onReceive(signOutPublisher) { _ in
+            showingLogin = true
+        }
     }
 }
 
