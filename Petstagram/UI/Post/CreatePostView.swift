@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct CreatePostView: View {
+    @State var showNext = false
     @State var postImage = UIImage()
     
     var body: some View {
         NavigationView {
-            TakePhotoView(onPhotoCapture: { image in
-                postImage = image
-            })
+            VStack {
+                TakePhotoView(onPhotoCapture: { image in
+                    postImage = image
+                    showNext = true
+                })
+                
+                NavigationLink(
+                    destination: Image(uiImage: postImage),
+                    isActive: $showNext) {
+                    EmptyView()
+                }
+            }
         }
     }
 }

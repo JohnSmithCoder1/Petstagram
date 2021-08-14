@@ -30,7 +30,7 @@ struct MainView: View {
                 }.tag(0)
             Text("")
                 .sheet(isPresented: $showingPostView) {
-                    Text("Create a post")
+                    CreatePostView()
                         .environmentObject(userData)
                 }
                 .tabItem {
