@@ -34,6 +34,7 @@
 		05C1652B26C8319100A28E53 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1652A26C8319100A28E53 /* UserData.swift */; };
 		05C1652E26C8377300A28E53 /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1652D26C8377300A28E53 /* TakePhotoViewController.swift */; };
 		05C1653026C8392700A28E53 /* TakePhotoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C1652F26C8392700A28E53 /* TakePhotoStoryboard.storyboard */; };
+		05C1653226C83D4E00A28E53 /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1653126C83D4E00A28E53 /* CreatePostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		05C1652A26C8319100A28E53 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		05C1652D26C8377300A28E53 /* TakePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhotoViewController.swift; sourceTree = "<group>"; };
 		05C1652F26C8392700A28E53 /* TakePhotoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TakePhotoStoryboard.storyboard; sourceTree = "<group>"; };
+		05C1653126C83D4E00A28E53 /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +268,7 @@
 		05C1652C26C8374A00A28E53 /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				05C1653126C83D4E00A28E53 /* CreatePostView.swift */,
 				05C1652D26C8377300A28E53 /* TakePhotoViewController.swift */,
 				05C1652F26C8392700A28E53 /* TakePhotoStoryboard.storyboard */,
 			);
@@ -425,6 +428,7 @@
 				05C1652526C8175D00A28E53 /* FeedCell.swift in Sources */,
 				05C1652126C6DDB800A28E53 /* FeedView.swift in Sources */,
 				05C1652B26C8319100A28E53 /* UserData.swift in Sources */,
+				05C1653226C83D4E00A28E53 /* CreatePostView.swift in Sources */,
 				05C164CB26C434AA00A28E53 /* PetstagramApp.swift in Sources */,
 				05C164FC26C4397F00A28E53 /* APIClient.swift in Sources */,
 				05C1652926C8296F00A28E53 /* CommentCell.swift in Sources */,
