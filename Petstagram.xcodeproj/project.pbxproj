@@ -29,6 +29,7 @@
 		05C1651D26C4A18500A28E53 /* AppTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1651C26C4A18500A28E53 /* AppTitle.swift */; };
 		05C1652126C6DDB800A28E53 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1652026C6DDB800A28E53 /* FeedView.swift */; };
 		05C1652326C6DE3500A28E53 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1652226C6DE3500A28E53 /* Feed.swift */; };
+		05C1652526C8175D00A28E53 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1652426C8175D00A28E53 /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		05C1651C26C4A18500A28E53 /* AppTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTitle.swift; sourceTree = "<group>"; };
 		05C1652026C6DDB800A28E53 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		05C1652226C6DE3500A28E53 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		05C1652426C8175D00A28E53 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				05C1652026C6DDB800A28E53 /* FeedView.swift */,
+				05C1652426C8175D00A28E53 /* FeedCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				05C1651226C4863C00A28E53 /* Color+Petstagram.swift in Sources */,
 				05C164FA26C4387D00A28E53 /* PostRequest.swift in Sources */,
 				05C164F826C4373B00A28E53 /* APIRequest.swift in Sources */,
+				05C1652526C8175D00A28E53 /* FeedCell.swift in Sources */,
 				05C1652126C6DDB800A28E53 /* FeedView.swift in Sources */,
 				05C164CB26C434AA00A28E53 /* PetstagramApp.swift in Sources */,
 				05C164FC26C4397F00A28E53 /* APIClient.swift in Sources */,
