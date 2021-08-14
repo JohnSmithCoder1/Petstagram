@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct CreatePostView: View {
+    @State var postImage = UIImage()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            TakePhotoView(onPhotoCapture: { image in
+                postImage = image
+            })
+        }
     }
 }
 
