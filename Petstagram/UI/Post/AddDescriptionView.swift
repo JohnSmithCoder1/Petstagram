@@ -11,6 +11,7 @@ struct AddDescriptionView: View {
     var image: UIImage
     @State var description = ""
     @StateObject private var controller = PostController()
+    @EnvironmentObject var userData: UserData
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -42,6 +43,11 @@ struct AddDescriptionView: View {
                     }
                     .foregroundColor(controller.isRunning ? .gray : .accentGreen)
                     .disabled(controller.isRunning)
+                    .onReceive(controller.$postUploaded) { completed in
+                        if completed {
+                            self.userData.selectedTab = 0
+                        }
+                    }
                 }
             }
             .padding(.vertical)
@@ -53,5 +59,6 @@ struct AddDescriptionView: View {
 struct AddDescriptionView_Previews: PreviewProvider {
     static var previews: some View {
         AddDescriptionView(image: UIImage(named: "puppies")!)
+            .environmentObject(UserData())
     }
 }
