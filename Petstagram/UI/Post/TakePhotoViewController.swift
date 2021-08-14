@@ -9,9 +9,9 @@ import UIKit
 import SwiftUI
 
 class TakePhotoViewController: UIViewController {
-//    @IBOutlet var previewView: CameraPrviewView!
-//
-//    var captureController: PhotoCaptureController!
+    @IBOutlet var previewView: CameraPreviewView!
+
+    var captureController: PhotoCaptureController!
     let completionHandler: (UIImage) -> Void
     
     init?(coder: NSCoder, completionHandler: @escaping (UIImage) -> Void) {
@@ -25,21 +25,22 @@ class TakePhotoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        captureController = PhotoCaptureController(preview: previewView, alertPresenter: self, captureCompletionHandler: completionHandler)
+        
+        captureController = PhotoCaptureController(previewView: previewView, alertPresenter: self, captureCompletionHandler: completionHandler)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        captureController.startSession()
+        captureController.startSession()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-//        captureController.stopSession()
+        captureController.stopSession()
     }
     
     @IBAction func shutterButtonTapped() {
-//        captureController.capturePhoto()
+        captureController.capturePhoto()
     }
 }
 

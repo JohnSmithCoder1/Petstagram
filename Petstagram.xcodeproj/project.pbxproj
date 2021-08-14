@@ -14,7 +14,7 @@
 		05C164E826C434AE00A28E53 /* PetstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164E726C434AE00A28E53 /* PetstagramUITests.swift */; };
 		05C164F626C4367300A28E53 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164F526C4367300A28E53 /* Post.swift */; };
 		05C164F826C4373B00A28E53 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164F726C4373B00A28E53 /* APIRequest.swift */; };
-		05C164FA26C4387D00A28E53 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164F926C4387D00A28E53 /* PostRequest.swift */; };
+		05C164FA26C4387D00A28E53 /* PostRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164F926C4387D00A28E53 /* PostRequests.swift */; };
 		05C164FC26C4397F00A28E53 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164FB26C4397F00A28E53 /* APIClient.swift */; };
 		05C164FE26C43ACF00A28E53 /* APIEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164FD26C43ACF00A28E53 /* APIEnvironment.swift */; };
 		05C1650026C45A3100A28E53 /* PostRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164FF26C45A3100A28E53 /* PostRequestTests.swift */; };
@@ -35,6 +35,11 @@
 		05C1652E26C8377300A28E53 /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1652D26C8377300A28E53 /* TakePhotoViewController.swift */; };
 		05C1653026C8392700A28E53 /* TakePhotoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C1652F26C8392700A28E53 /* TakePhotoStoryboard.storyboard */; };
 		05C1653226C83D4E00A28E53 /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1653126C83D4E00A28E53 /* CreatePostView.swift */; };
+		05C1653426C844DC00A28E53 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1653326C844DC00A28E53 /* CameraPreviewView.swift */; };
+		05C1653626C848B600A28E53 /* PhotoCaptureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1653526C848B600A28E53 /* PhotoCaptureController.swift */; };
+		05C1653826C850FC00A28E53 /* AddDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1653726C850FC00A28E53 /* AddDescriptionView.swift */; };
+		05C1653A26C8526300A28E53 /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1653926C8526300A28E53 /* PostController.swift */; };
+		05C1653C26C854B600A28E53 /* ImageRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1653B26C854B600A28E53 /* ImageRequests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +73,7 @@
 		05C164E926C434AE00A28E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05C164F526C4367300A28E53 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		05C164F726C4373B00A28E53 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
-		05C164F926C4387D00A28E53 /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
+		05C164F926C4387D00A28E53 /* PostRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequests.swift; sourceTree = "<group>"; };
 		05C164FB26C4397F00A28E53 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		05C164FD26C43ACF00A28E53 /* APIEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnvironment.swift; sourceTree = "<group>"; };
 		05C164FF26C45A3100A28E53 /* PostRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestTests.swift; sourceTree = "<group>"; };
@@ -88,6 +93,11 @@
 		05C1652D26C8377300A28E53 /* TakePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhotoViewController.swift; sourceTree = "<group>"; };
 		05C1652F26C8392700A28E53 /* TakePhotoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TakePhotoStoryboard.storyboard; sourceTree = "<group>"; };
 		05C1653126C83D4E00A28E53 /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
+		05C1653326C844DC00A28E53 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		05C1653526C848B600A28E53 /* PhotoCaptureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureController.swift; sourceTree = "<group>"; };
+		05C1653726C850FC00A28E53 /* AddDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDescriptionView.swift; sourceTree = "<group>"; };
+		05C1653926C8526300A28E53 /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
+		05C1653B26C854B600A28E53 /* ImageRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,7 +231,8 @@
 			isa = PBXGroup;
 			children = (
 				05C1651526C486BA00A28E53 /* UserRequests.swift */,
-				05C164F926C4387D00A28E53 /* PostRequest.swift */,
+				05C164F926C4387D00A28E53 /* PostRequests.swift */,
+				05C1653B26C854B600A28E53 /* ImageRequests.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -271,6 +282,10 @@
 				05C1653126C83D4E00A28E53 /* CreatePostView.swift */,
 				05C1652D26C8377300A28E53 /* TakePhotoViewController.swift */,
 				05C1652F26C8392700A28E53 /* TakePhotoStoryboard.storyboard */,
+				05C1653326C844DC00A28E53 /* CameraPreviewView.swift */,
+				05C1653526C848B600A28E53 /* PhotoCaptureController.swift */,
+				05C1653726C850FC00A28E53 /* AddDescriptionView.swift */,
+				05C1653926C8526300A28E53 /* PostController.swift */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -418,13 +433,18 @@
 				05C1651626C486BA00A28E53 /* UserRequests.swift in Sources */,
 				05C1652326C6DE3500A28E53 /* Feed.swift in Sources */,
 				05C1652E26C8377300A28E53 /* TakePhotoViewController.swift in Sources */,
+				05C1653C26C854B600A28E53 /* ImageRequests.swift in Sources */,
 				05C164F626C4367300A28E53 /* Post.swift in Sources */,
 				05C164CD26C434AA00A28E53 /* MainView.swift in Sources */,
+				05C1653826C850FC00A28E53 /* AddDescriptionView.swift in Sources */,
 				05C1650F26C485FC00A28E53 /* LoginSignupView.swift in Sources */,
 				05C164FE26C43ACF00A28E53 /* APIEnvironment.swift in Sources */,
 				05C1651226C4863C00A28E53 /* Color+Petstagram.swift in Sources */,
-				05C164FA26C4387D00A28E53 /* PostRequest.swift in Sources */,
+				05C1653626C848B600A28E53 /* PhotoCaptureController.swift in Sources */,
+				05C164FA26C4387D00A28E53 /* PostRequests.swift in Sources */,
 				05C164F826C4373B00A28E53 /* APIRequest.swift in Sources */,
+				05C1653426C844DC00A28E53 /* CameraPreviewView.swift in Sources */,
+				05C1653A26C8526300A28E53 /* PostController.swift in Sources */,
 				05C1652526C8175D00A28E53 /* FeedCell.swift in Sources */,
 				05C1652126C6DDB800A28E53 /* FeedView.swift in Sources */,
 				05C1652B26C8319100A28E53 /* UserData.swift in Sources */,

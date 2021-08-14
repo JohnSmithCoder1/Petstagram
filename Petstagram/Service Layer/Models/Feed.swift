@@ -23,7 +23,7 @@ class Feed: ObservableObject {
     
     func loadFeed() {
         let client = APIClient()
-        let request = PostRequest()
+        let request = PostRequests()
         
         getPostsSubscriber = client.publisherForRequest(request)
             .sink(receiveCompletion: { result in
