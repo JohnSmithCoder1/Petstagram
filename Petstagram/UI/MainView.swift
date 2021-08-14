@@ -10,6 +10,8 @@ import Combine
 
 struct MainView: View {
     @State var showingLogin = true
+    @State var showingPostView = false
+    @StateObject var userData = UserData()
     
     let signInPublisher = NotificationCenter.default
         .publisher(for: .signInNotification)
@@ -19,26 +21,18 @@ struct MainView: View {
         .publisher(for: .signOutNotification)
         .receive(on: RunLoop.main)
     
-    //    var publisher: AnyCancellable = {
-    //        let client = APIClient()
-    //        let request = PostRequest()
-    //
-    //        return client.publisherForRequest(request)
-    //            .sink(receiveCompletion: { result in
-    //                print(result)
-    //            }, receiveValue: { newPosts in
-    //                print(newPosts)
-    //            })
-    //    }()
-    
     var body: some View {
-        TabView {
+        TabView(selection: $userData.selectedTab) {
             FeedView()
                 .tabItem {
                     Image("home")
                     Text("Home")
                 }.tag(0)
-            Text("Tab Content 2")
+            Text("")
+                .sheet(isPresented: $showingPostView) {
+                    Text("Create a post")
+                        .environmentObject(userData)
+                }
                 .tabItem {
                     Image("photo")
                     Text("Post")
@@ -59,11 +53,14 @@ struct MainView: View {
         .onReceive(signOutPublisher) { _ in
             showingLogin = true
         }
+        .onReceive(userData.$selectedTab) { _ in
+            self.showingPostView = (userData.selectedTab == 1)
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainView(showingLogin: false)
     }
 }
