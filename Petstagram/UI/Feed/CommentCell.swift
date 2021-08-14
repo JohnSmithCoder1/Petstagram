@@ -35,6 +35,8 @@ struct CommentCell: View {
                     Text(formatter.localizedString(for: post.createdAt, relativeTo: Date()))
                         .font(.caption)
                 }
+                
+                Spacer()
             }
             
             Text(post.caption)
