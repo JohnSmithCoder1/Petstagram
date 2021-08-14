@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class TakePhotoViewController: UIViewController {
 //    @IBOutlet var previewView: CameraPrviewView!
@@ -39,5 +40,29 @@ class TakePhotoViewController: UIViewController {
     
     @IBAction func shutterButtonTapped() {
 //        captureController.capturePhoto()
+    }
+}
+
+// wrapper to make SwiftUI View
+struct TakePhotoView: UIViewControllerRepresentable {
+    let onPhotoCapture: (UIImage) -> Void
+    
+    func makeUIViewController(context: Context) -> TakePhotoViewController {
+        let storyboard = UIStoryboard(name: "TakePhotoStoryboard", bundle: nil)
+        let controller = storyboard.instantiateInitialViewController { coder in
+            TakePhotoViewController(coder: coder, completionHandler: onPhotoCapture)
+        }
+        
+        return controller!
+    }
+    
+    func updateUIViewController(_ uiViewController: TakePhotoViewController, context: Context) {
+        // Nothing to do in an update with this view controller
+    }
+}
+
+struct TakePhotoView_Previews: PreviewProvider {
+    static var previews: some View {
+        return TakePhotoView(onPhotoCapture: { _ in })
     }
 }
