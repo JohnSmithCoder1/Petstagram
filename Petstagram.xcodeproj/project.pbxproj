@@ -31,6 +31,7 @@
 		05C1652326C6DE3500A28E53 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1652226C6DE3500A28E53 /* Feed.swift */; };
 		05C1652526C8175D00A28E53 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1652426C8175D00A28E53 /* FeedCell.swift */; };
 		05C1652926C8296F00A28E53 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1652826C8296F00A28E53 /* CommentCell.swift */; };
+		05C1652B26C8319100A28E53 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1652A26C8319100A28E53 /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		05C1652226C6DE3500A28E53 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		05C1652426C8175D00A28E53 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		05C1652826C8296F00A28E53 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		05C1652A26C8319100A28E53 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				05C164CC26C434AA00A28E53 /* MainView.swift */,
+				05C1652A26C8319100A28E53 /* UserData.swift */,
 				05C1651E26C6DD8F00A28E53 /* Onboarding */,
 				05C1651F26C6DDA000A28E53 /* Feed */,
 				05C1651026C4860F00A28E53 /* Helpers */,
@@ -405,6 +408,7 @@
 				05C164F826C4373B00A28E53 /* APIRequest.swift in Sources */,
 				05C1652526C8175D00A28E53 /* FeedCell.swift in Sources */,
 				05C1652126C6DDB800A28E53 /* FeedView.swift in Sources */,
+				05C1652B26C8319100A28E53 /* UserData.swift in Sources */,
 				05C164CB26C434AA00A28E53 /* PetstagramApp.swift in Sources */,
 				05C164FC26C4397F00A28E53 /* APIClient.swift in Sources */,
 				05C1652926C8296F00A28E53 /* CommentCell.swift in Sources */,
