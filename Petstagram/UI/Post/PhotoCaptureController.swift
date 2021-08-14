@@ -42,10 +42,10 @@ class PhotoCaptureController: NSObject {
     }
     
     func capturePhoto() {
-//        sessionQueue.async {
-//            let photoSettings = AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.jpeg])
-//            self.photoOutput.capturePhoto(with: photoSettings, delegate: self)
-//        }
+        sessionQueue.async {
+            let photoSettings = AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.jpeg])
+            self.photoOutput.capturePhoto(with: photoSettings, delegate: self)
+        }
     }
     
     // MARK: - Private methods
@@ -152,4 +152,32 @@ class PhotoCaptureController: NSObject {
     }
 }
 
-extension PhotoCaptureController: AVCapturePhotoCaptureDelegate {}
+extension PhotoCaptureController: AVCapturePhotoCaptureDelegate {
+    func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
+        if let error = error {
+            print("Error processing photo: \(error)")
+        } else {
+            if let photoData = photo.fileDataRepresentation(), let rawImage = UIImage(data: photoData) {
+                outputImage = rawImage
+            } else {
+                outputImage = nil
+            }
+        }
+    }
+    
+    func photoOutput(_ output: AVCapturePhotoOutput, didFinishCaptureFor resolvedSettings: AVCaptureResolvedPhotoSettings, error: Error?) {
+        if let error = error {
+            print("Error capturing photo: \(error)")
+            
+            return
+        }
+        
+        guard let outputImage = outputImage else {
+            print("No data found capturing photo")
+            
+            return
+        }
+        
+        captureCompletionHandler(outputImage)
+    }
+}
