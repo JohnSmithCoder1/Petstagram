@@ -60,19 +60,19 @@ class PhotoCaptureController: NSObject {
     }
     
     private func requestAccess() {
-//        sessionQueue.suspend()
-//
-//        AVCaptureDevice.requestAccess(for: .video) { granted in
-//            defer {
-//                self.sessionQueue.resume()
-//            }
-//
-//            self.accessGranted = granted
-//
-//            if granted == false {
-//                self.alertNoAccess()
-//            }
-//        }
+        sessionQueue.suspend()
+
+        AVCaptureDevice.requestAccess(for: .video) { granted in
+            defer {
+                self.sessionQueue.resume()
+            }
+
+            self.accessGranted = granted
+
+            if granted == false {
+                self.alertNoAccess()
+            }
+        }
     }
     
     private func configureSession() {
@@ -97,34 +97,34 @@ class PhotoCaptureController: NSObject {
     }
     
     private func configureInput() throws {
-//        self.session.sessionPreset = .photo
-//
-//        // Use the more specific version of this method to request a different camera (i.e. front camera or telephoto camera)
-//        guard let cameraDevice = AVCaptureDevice.default(for: .video) else {
-//            throw ConfigurationError.inputConfigurationError
-//        }
-//
-//        let input = try AVCaptureDeviceInput(device: cameraDevice)
-//
-//        if self.session.canAddInput(input) {
-//            self.session.addInput(input)
-//        } else {
-//            throw ConfigurationError.inputConfigurationError
-//        }
+        self.session.sessionPreset = .photo
+
+        // Use the more specific version of this method to request a different camera (i.e. front camera or telephoto camera)
+        guard let cameraDevice = AVCaptureDevice.default(for: .video) else {
+            throw ConfigurationError.inputConfigurationError
+        }
+
+        let input = try AVCaptureDeviceInput(device: cameraDevice)
+
+        if self.session.canAddInput(input) {
+            self.session.addInput(input)
+        } else {
+            throw ConfigurationError.inputConfigurationError
+        }
     }
     
     private func configureOutput() throws {
-//        if self.session.canAddOutput(self.photoOutput) {
-//            self.session.addOutput(self.photoOutput)
-//
-//            // We're taking simple pictures, without depth, live photos, etc.
-//            self.photoOutput.isHighResolutionCaptureEnabled = false
-//            self.photoOutput.isLivePhotoCaptureEnabled = false
-//            self.photoOutput.isDepthDataDeliveryEnabled = false
-//            self.photoOutput.isPortraitEffectsMatteDeliveryEnabled = false
-//        } else {
-//            throw ConfigurationError.outputConfigurationError
-//        }
+        if self.session.canAddOutput(self.photoOutput) {
+            self.session.addOutput(self.photoOutput)
+
+            // We're taking simple pictures, without depth, live photos, etc.
+            self.photoOutput.isHighResolutionCaptureEnabled = false
+            self.photoOutput.isLivePhotoCaptureEnabled = false
+            self.photoOutput.isDepthDataDeliveryEnabled = false
+            self.photoOutput.isPortraitEffectsMatteDeliveryEnabled = false
+        } else {
+            throw ConfigurationError.outputConfigurationError
+        }
     }
     
     private func alertNoAccess() {
