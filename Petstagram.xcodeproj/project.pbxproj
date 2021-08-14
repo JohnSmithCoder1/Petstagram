@@ -33,6 +33,7 @@
 		05C1652926C8296F00A28E53 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1652826C8296F00A28E53 /* CommentCell.swift */; };
 		05C1652B26C8319100A28E53 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1652A26C8319100A28E53 /* UserData.swift */; };
 		05C1652E26C8377300A28E53 /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1652D26C8377300A28E53 /* TakePhotoViewController.swift */; };
+		05C1653026C8392700A28E53 /* TakePhotoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C1652F26C8392700A28E53 /* TakePhotoStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		05C1652826C8296F00A28E53 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		05C1652A26C8319100A28E53 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		05C1652D26C8377300A28E53 /* TakePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhotoViewController.swift; sourceTree = "<group>"; };
+		05C1652F26C8392700A28E53 /* TakePhotoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TakePhotoStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				05C1652D26C8377300A28E53 /* TakePhotoViewController.swift */,
+				05C1652F26C8392700A28E53 /* TakePhotoStoryboard.storyboard */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05C1651926C4A0CF00A28E53 /* CoolStoryregular.ttf in Resources */,
+				05C1653026C8392700A28E53 /* TakePhotoStoryboard.storyboard in Resources */,
 				05C164D226C434AD00A28E53 /* Preview Assets.xcassets in Resources */,
 				05C164CF26C434AD00A28E53 /* Assets.xcassets in Resources */,
 			);
