@@ -36,6 +36,8 @@ struct CommentCell: View {
                         .font(.caption)
                 }
             }
+            
+            Text(post.caption)
         }
     }
 }

@@ -33,6 +33,8 @@ struct FeedCell: View {
                     .padding()
                     .shadow(radius: 3)
                 }(), alignment: .bottomTrailing)
+            
+            CommentCell(post: post)
         }
         // Prevents the cell from highlighting when selected
         .buttonStyle(PlainButtonStyle())
