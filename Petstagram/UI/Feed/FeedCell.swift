@@ -18,6 +18,21 @@ struct FeedCell: View {
                 .resizable()
                 .scaledToFit()
                 .cornerRadius(15)
+                .overlay({
+                    VStack(spacing: 15) {
+                        Button(action: {}) {
+                            Image("filled")
+                        }
+                        Button(action: {}) {
+                            Image("comment")
+                        }
+                        Button(action: {}) {
+                            Image("share")
+                        }
+                    }
+                    .padding()
+                    .shadow(radius: 3)
+                }(), alignment: .bottomTrailing)
         }
     }
 }
@@ -25,7 +40,11 @@ struct FeedCell: View {
 struct FeedCell_Previews: PreviewProvider {
     static var previews: some View {
         let post = Post(caption: "can you code me up some food?", createdAt: Date())
-        FeedCell(post: post)
-            .previewLayout(.sizeThatFits)
+        
+        return Group {
+            FeedCell(post: post)
+            FeedCell(post: post, postImage: UIImage(named: "friends")!)
+        }
+        .previewLayout(.sizeThatFits)
     }
 }
