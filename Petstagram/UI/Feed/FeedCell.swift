@@ -34,12 +34,15 @@ struct FeedCell: View {
                     .shadow(radius: 3)
                 }(), alignment: .bottomTrailing)
         }
+        // Prevents the cell from highlighting when selected
+        .buttonStyle(PlainButtonStyle())
     }
 }
 
 struct FeedCell_Previews: PreviewProvider {
     static var previews: some View {
-        let post = Post(caption: "can you code me up some food?", createdAt: Date())
+        let createdDate = Date().advanced(by: TimeInterval(exactly: -5*60)!)
+        let post = Post(caption: "can you code me up some food?", createdAt: createdDate, createdBy: "UserName")
         
         return Group {
             FeedCell(post: post)

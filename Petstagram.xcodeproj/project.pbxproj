@@ -30,6 +30,7 @@
 		05C1652126C6DDB800A28E53 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1652026C6DDB800A28E53 /* FeedView.swift */; };
 		05C1652326C6DE3500A28E53 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1652226C6DE3500A28E53 /* Feed.swift */; };
 		05C1652526C8175D00A28E53 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1652426C8175D00A28E53 /* FeedCell.swift */; };
+		05C1652926C8296F00A28E53 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1652826C8296F00A28E53 /* CommentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		05C1652026C6DDB800A28E53 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		05C1652226C6DE3500A28E53 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		05C1652426C8175D00A28E53 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		05C1652826C8296F00A28E53 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +250,7 @@
 			children = (
 				05C1652026C6DDB800A28E53 /* FeedView.swift */,
 				05C1652426C8175D00A28E53 /* FeedCell.swift */,
+				05C1652826C8296F00A28E53 /* CommentCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				05C1652126C6DDB800A28E53 /* FeedView.swift in Sources */,
 				05C164CB26C434AA00A28E53 /* PetstagramApp.swift in Sources */,
 				05C164FC26C4397F00A28E53 /* APIClient.swift in Sources */,
+				05C1652926C8296F00A28E53 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
