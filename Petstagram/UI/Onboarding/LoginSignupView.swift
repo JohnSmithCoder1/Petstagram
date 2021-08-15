@@ -115,7 +115,7 @@ struct LoginSignupView: View {
             return
         }
         
-        let client = APIClient()
+        let client = APIClient(environment: .local81)
         let request = SignInUserRequest(username: username, password: password)
         networkOperation = client.publisherForRequest(request)
             .sink(receiveCompletion: { result in
@@ -129,7 +129,7 @@ struct LoginSignupView: View {
             return
         }
         
-        let client = APIClient()
+        let client = APIClient(environment: .local81)
         let request = SignUpUserRequest(username: username, email: email, password: password)
         networkOperation = client.publisherForRequest(request)
             .sink(receiveCompletion: { result in

@@ -16,7 +16,7 @@ final class PostController: ObservableObject {
     func uploadPost(withDescription description: String, image: UIImage) {
         isRunning = true
         
-        let client = APIClient()
+        let client = APIClient(environment: .local81)
         let request = CreateNewPostRequest(caption: description)
         
         client.publisherForRequest(request)
