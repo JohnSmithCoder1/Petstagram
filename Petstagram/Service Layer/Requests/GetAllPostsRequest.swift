@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PostRequests: APIRequest {
+struct GetAllPostsRequest: APIRequest {
     typealias Response = [Post]
         
     var method: HTTPMethod { return .GET }
