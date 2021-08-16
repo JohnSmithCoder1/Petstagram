@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0540861826C99CFA0012EEB8 /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1650126C45A7A00A28E53 /* JsonData.swift */; };
+		0540861D26CAC8340012EEB8 /* KituraContracts in Frameworks */ = {isa = PBXBuildFile; productRef = 0540861C26CAC8340012EEB8 /* KituraContracts */; };
 		05C164CB26C434AA00A28E53 /* PetstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164CA26C434AA00A28E53 /* PetstagramApp.swift */; };
 		05C164CD26C434AA00A28E53 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164CC26C434AA00A28E53 /* MainView.swift */; };
 		05C164CF26C434AD00A28E53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C164CE26C434AD00A28E53 /* Assets.xcassets */; };
@@ -106,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0540861D26CAC8340012EEB8 /* KituraContracts in Frameworks */,
 				05C1650726C4669C00A28E53 /* Swifter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +311,7 @@
 			name = Petstagram;
 			packageProductDependencies = (
 				05C1650626C4669C00A28E53 /* Swifter */,
+				0540861C26CAC8340012EEB8 /* KituraContracts */,
 			);
 			productName = Petstagram;
 			productReference = 05C164C726C434AA00A28E53 /* Petstagram.app */;
@@ -384,6 +387,7 @@
 			mainGroup = 05C164BE26C434AA00A28E53;
 			packageReferences = (
 				05C1650526C4669C00A28E53 /* XCRemoteSwiftPackageReference "swifter" */,
+				0540861B26CAC8340012EEB8 /* XCRemoteSwiftPackageReference "KituraContracts" */,
 			);
 			productRefGroup = 05C164C826C434AA00A28E53 /* Products */;
 			projectDirPath = "";
@@ -782,6 +786,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0540861B26CAC8340012EEB8 /* XCRemoteSwiftPackageReference "KituraContracts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/IBM-Swift/KituraContracts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
 		05C1650526C4669C00A28E53 /* XCRemoteSwiftPackageReference "swifter" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/httpswift/swifter.git";
@@ -793,6 +805,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0540861C26CAC8340012EEB8 /* KituraContracts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0540861B26CAC8340012EEB8 /* XCRemoteSwiftPackageReference "KituraContracts" */;
+			productName = KituraContracts;
+		};
 		05C1650626C4669C00A28E53 /* Swifter */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 05C1650526C4669C00A28E53 /* XCRemoteSwiftPackageReference "swifter" */;
