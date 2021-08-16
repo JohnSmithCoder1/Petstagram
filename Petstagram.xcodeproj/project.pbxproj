@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0540861826C99CFA0012EEB8 /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1650126C45A7A00A28E53 /* JsonData.swift */; };
 		0540861D26CAC8340012EEB8 /* KituraContracts in Frameworks */ = {isa = PBXBuildFile; productRef = 0540861C26CAC8340012EEB8 /* KituraContracts */; };
 		05C164CB26C434AA00A28E53 /* PetstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164CA26C434AA00A28E53 /* PetstagramApp.swift */; };
 		05C164CD26C434AA00A28E53 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164CC26C434AA00A28E53 /* MainView.swift */; };
@@ -437,7 +436,6 @@
 				05C1651426C4868700A28E53 /* UserAuthentication.swift in Sources */,
 				05C1651626C486BA00A28E53 /* UserRequests.swift in Sources */,
 				05C1652326C6DE3500A28E53 /* Feed.swift in Sources */,
-				0540861826C99CFA0012EEB8 /* JsonData.swift in Sources */,
 				05C1652E26C8377300A28E53 /* TakePhotoViewController.swift in Sources */,
 				05C1653C26C854B600A28E53 /* ImageRequests.swift in Sources */,
 				05C164F626C4367300A28E53 /* Post.swift in Sources */,

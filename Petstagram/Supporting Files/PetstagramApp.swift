@@ -6,22 +6,9 @@
 //
 
 import SwiftUI
-import Swifter
 
 @main
 struct PetstagramApp: App {
-    // TODO: temp server code until API is ready
-    // TODO: remove JsonData from target when this is removed
-    let server: HttpServer = {
-        let server = HttpServer()
-        
-        // Use a different port so unit tests will still work
-        try? server.start(8081)
-        server.POST["/api/v1/image"] = { _ in HttpResponse.ok(.text("")) }
-        
-        return server
-    }()
-    
     var body: some Scene {
         WindowGroup {
             MainView()
