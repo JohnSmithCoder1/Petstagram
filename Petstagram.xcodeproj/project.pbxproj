@@ -15,7 +15,7 @@
 		05C164E826C434AE00A28E53 /* PetstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164E726C434AE00A28E53 /* PetstagramUITests.swift */; };
 		05C164F626C4367300A28E53 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164F526C4367300A28E53 /* Post.swift */; };
 		05C164F826C4373B00A28E53 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164F726C4373B00A28E53 /* APIRequest.swift */; };
-		05C164FA26C4387D00A28E53 /* GetAllPostsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164F926C4387D00A28E53 /* GetAllPostsRequest.swift */; };
+		05C164FA26C4387D00A28E53 /* PostRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164F926C4387D00A28E53 /* PostRequests.swift */; };
 		05C164FC26C4397F00A28E53 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164FB26C4397F00A28E53 /* APIClient.swift */; };
 		05C164FE26C43ACF00A28E53 /* APIEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164FD26C43ACF00A28E53 /* APIEnvironment.swift */; };
 		05C1650026C45A3100A28E53 /* PostRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164FF26C45A3100A28E53 /* PostRequestTests.swift */; };
@@ -74,7 +74,7 @@
 		05C164E926C434AE00A28E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05C164F526C4367300A28E53 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		05C164F726C4373B00A28E53 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
-		05C164F926C4387D00A28E53 /* GetAllPostsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllPostsRequest.swift; sourceTree = "<group>"; };
+		05C164F926C4387D00A28E53 /* PostRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequests.swift; sourceTree = "<group>"; };
 		05C164FB26C4397F00A28E53 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		05C164FD26C43ACF00A28E53 /* APIEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnvironment.swift; sourceTree = "<group>"; };
 		05C164FF26C45A3100A28E53 /* PostRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestTests.swift; sourceTree = "<group>"; };
@@ -232,7 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				05C1651526C486BA00A28E53 /* UserRequests.swift */,
-				05C164F926C4387D00A28E53 /* GetAllPostsRequest.swift */,
+				05C164F926C4387D00A28E53 /* PostRequests.swift */,
 				05C1653B26C854B600A28E53 /* ImageRequests.swift */,
 			);
 			path = Requests;
@@ -443,7 +443,7 @@
 				05C164FE26C43ACF00A28E53 /* APIEnvironment.swift in Sources */,
 				05C1651226C4863C00A28E53 /* Color+Petstagram.swift in Sources */,
 				05C1653626C848B600A28E53 /* PhotoCaptureController.swift in Sources */,
-				05C164FA26C4387D00A28E53 /* GetAllPostsRequest.swift in Sources */,
+				05C164FA26C4387D00A28E53 /* PostRequests.swift in Sources */,
 				05C164F826C4373B00A28E53 /* APIRequest.swift in Sources */,
 				05C1653426C844DC00A28E53 /* CameraPreviewView.swift in Sources */,
 				05C1653A26C8526300A28E53 /* PostController.swift in Sources */,

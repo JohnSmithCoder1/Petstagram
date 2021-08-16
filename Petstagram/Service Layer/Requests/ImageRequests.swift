@@ -20,6 +20,7 @@ struct UploadImageRequest: APIRequest {
     
     var method: HTTPMethod { return .POST }
     var path: String { return "/image" }
+    var contentType: String { return "image/jpeg" }
     var body: Data? { return imageData }
     
     func handle(response: Data) throws -> Void {}

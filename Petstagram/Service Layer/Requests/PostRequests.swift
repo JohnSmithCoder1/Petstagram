@@ -12,6 +12,7 @@ struct GetAllPostsRequest: APIRequest {
         
     var method: HTTPMethod { return .GET }
     var path: String { return "/posts" }
+    var contentType: String { return "application/json" }
     var body: Data? { return nil }
     
     func handle(response: Data) throws -> [Post] {
@@ -33,6 +34,7 @@ struct CreateNewPostRequest: APIRequest, Codable {
     
     var method: HTTPMethod { return .POST }
     var path: String { return "/posts" }
+    var contentType: String { return "application/json" }
     var body: Data? {
         let encoder = JSONEncoder()
         encoder.dateEncodingStrategy = .iso8601
