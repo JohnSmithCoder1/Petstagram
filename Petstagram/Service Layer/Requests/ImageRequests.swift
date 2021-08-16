@@ -22,6 +22,11 @@ struct UploadImageRequest: APIRequest {
     var method: HTTPMethod { return .POST }
     var path: String { return "/image" }
     var contentType: String { return "image/jpeg" }
+    
+    var additionalHeaders: [String : String] {
+        return ["Slug": "\(imageId.uuidString).jpg"]
+    }
+    
     var body: Data? { return imageData }
     var params: EmptyParams? { return nil }
     

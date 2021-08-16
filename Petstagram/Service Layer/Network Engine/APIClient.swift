@@ -47,6 +47,11 @@ struct APIClient {
         
         urlRequest = URLRequest(url: url)
         urlRequest.addValue(request.contentType, forHTTPHeaderField: "Content-Type")
+        
+        request.additionalHeaders.forEach { key, value in
+            urlRequest.addValue(value, forHTTPHeaderField: key)
+        }
+        
         urlRequest.httpMethod = request.method.rawValue
         urlRequest.httpBody = request.body
         
