@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import KituraContracts
 
 struct GetAllPostsRequest: APIRequest {
     typealias Response = [Post]
@@ -14,6 +15,7 @@ struct GetAllPostsRequest: APIRequest {
     var path: String { return "/posts" }
     var contentType: String { return "application/json" }
     var body: Data? { return nil }
+    var params: EmptyParams? { return nil }
     
     func handle(response: Data) throws -> [Post] {
         let decoder = JSONDecoder()
@@ -41,6 +43,7 @@ struct CreateNewPostRequest: APIRequest, Codable {
         
         return try? encoder.encode(post)
     }
+    var params: EmptyParams? { return nil }
     
     func handle(response: Data) throws -> Post {
         let decoder = JSONDecoder()

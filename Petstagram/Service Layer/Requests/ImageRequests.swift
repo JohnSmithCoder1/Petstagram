@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import KituraContracts
 
 struct UploadImageRequest: APIRequest {
     let imageId: UUID
@@ -22,6 +23,7 @@ struct UploadImageRequest: APIRequest {
     var path: String { return "/image" }
     var contentType: String { return "image/jpeg" }
     var body: Data? { return imageData }
+    var params: EmptyParams? { return nil }
     
     func handle(response: Data) throws -> Void {}
 }
