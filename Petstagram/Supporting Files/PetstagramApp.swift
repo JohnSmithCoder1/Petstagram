@@ -17,8 +17,6 @@ struct PetstagramApp: App {
         
         // Use a different port so unit tests will still work
         try? server.start(8081)
-        
-        server.POST["/api/v1/user"] = { _ in HttpResponse.ok(.text(JsonData.goodSignUp)) }
         server.POST["/api/v1/image"] = { _ in HttpResponse.ok(.text("")) }
         
         return server
