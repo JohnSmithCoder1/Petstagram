@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0540861D26CAC8340012EEB8 /* KituraContracts in Frameworks */ = {isa = PBXBuildFile; productRef = 0540861C26CAC8340012EEB8 /* KituraContracts */; };
+		0556208326CC2C9D005D2ACC /* TakePhotoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0556208226CC2C9D005D2ACC /* TakePhotoStoryboard.storyboard */; };
 		05C164CB26C434AA00A28E53 /* PetstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164CA26C434AA00A28E53 /* PetstagramApp.swift */; };
 		05C164CD26C434AA00A28E53 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164CC26C434AA00A28E53 /* MainView.swift */; };
 		05C164CF26C434AD00A28E53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C164CE26C434AD00A28E53 /* Assets.xcassets */; };
@@ -34,7 +35,6 @@
 		05C1652926C8296F00A28E53 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1652826C8296F00A28E53 /* CommentCell.swift */; };
 		05C1652B26C8319100A28E53 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1652A26C8319100A28E53 /* UserData.swift */; };
 		05C1652E26C8377300A28E53 /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1652D26C8377300A28E53 /* TakePhotoViewController.swift */; };
-		05C1653026C8392700A28E53 /* TakePhotoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C1652F26C8392700A28E53 /* TakePhotoStoryboard.storyboard */; };
 		05C1653226C83D4E00A28E53 /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1653126C83D4E00A28E53 /* CreatePostView.swift */; };
 		05C1653426C844DC00A28E53 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1653326C844DC00A28E53 /* CameraPreviewView.swift */; };
 		05C1653626C848B600A28E53 /* PhotoCaptureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1653526C848B600A28E53 /* PhotoCaptureController.swift */; };
@@ -61,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0556208226CC2C9D005D2ACC /* TakePhotoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TakePhotoStoryboard.storyboard; sourceTree = "<group>"; };
 		05C164C726C434AA00A28E53 /* Petstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Petstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C164CA26C434AA00A28E53 /* PetstagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetstagramApp.swift; sourceTree = "<group>"; };
 		05C164CC26C434AA00A28E53 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -92,7 +93,6 @@
 		05C1652826C8296F00A28E53 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		05C1652A26C8319100A28E53 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		05C1652D26C8377300A28E53 /* TakePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhotoViewController.swift; sourceTree = "<group>"; };
-		05C1652F26C8392700A28E53 /* TakePhotoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TakePhotoStoryboard.storyboard; sourceTree = "<group>"; };
 		05C1653126C83D4E00A28E53 /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
 		05C1653326C844DC00A28E53 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
 		05C1653526C848B600A28E53 /* PhotoCaptureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureController.swift; sourceTree = "<group>"; };
@@ -283,7 +283,7 @@
 			children = (
 				05C1653126C83D4E00A28E53 /* CreatePostView.swift */,
 				05C1652D26C8377300A28E53 /* TakePhotoViewController.swift */,
-				05C1652F26C8392700A28E53 /* TakePhotoStoryboard.storyboard */,
+				0556208226CC2C9D005D2ACC /* TakePhotoStoryboard.storyboard */,
 				05C1653326C844DC00A28E53 /* CameraPreviewView.swift */,
 				05C1653526C848B600A28E53 /* PhotoCaptureController.swift */,
 				05C1653726C850FC00A28E53 /* AddDescriptionView.swift */,
@@ -405,7 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05C1651926C4A0CF00A28E53 /* CoolStoryregular.ttf in Resources */,
-				05C1653026C8392700A28E53 /* TakePhotoStoryboard.storyboard in Resources */,
+				0556208326CC2C9D005D2ACC /* TakePhotoStoryboard.storyboard in Resources */,
 				05C164D226C434AD00A28E53 /* Preview Assets.xcassets in Resources */,
 				05C164CF26C434AD00A28E53 /* Assets.xcassets in Resources */,
 			);
