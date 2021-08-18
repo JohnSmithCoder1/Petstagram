@@ -25,7 +25,7 @@ class PhotoCaptureController: NSObject {
         self.captureCompletionHandler = captureCompletionHandler
         super.init()
         
-//        self.previewView.session = session
+        self.previewView.session = session
         setupSession()
     }
     

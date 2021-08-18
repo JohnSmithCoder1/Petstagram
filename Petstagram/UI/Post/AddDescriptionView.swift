@@ -48,6 +48,9 @@ struct AddDescriptionView: View {
                             self.userData.selectedTab = 0
                         }
                     }
+                    .alert(isPresented: $controller.postError) {
+                        Alert(title: Text(controller.postErrorText))
+                    }
                 }
             }
             .padding(.vertical)
