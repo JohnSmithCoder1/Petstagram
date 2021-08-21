@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0540861D26CAC8340012EEB8 /* KituraContracts in Frameworks */ = {isa = PBXBuildFile; productRef = 0540861C26CAC8340012EEB8 /* KituraContracts */; };
 		0556208326CC2C9D005D2ACC /* TakePhotoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0556208226CC2C9D005D2ACC /* TakePhotoStoryboard.storyboard */; };
+		0556231D26D14137005D2ACC /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556231C26D14137005D2ACC /* Like.swift */; };
 		05C164CB26C434AA00A28E53 /* PetstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164CA26C434AA00A28E53 /* PetstagramApp.swift */; };
 		05C164CD26C434AA00A28E53 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164CC26C434AA00A28E53 /* MainView.swift */; };
 		05C164CF26C434AD00A28E53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C164CE26C434AD00A28E53 /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 
 /* Begin PBXFileReference section */
 		0556208226CC2C9D005D2ACC /* TakePhotoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TakePhotoStoryboard.storyboard; sourceTree = "<group>"; };
+		0556231C26D14137005D2ACC /* Like.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
 		05C164C726C434AA00A28E53 /* Petstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Petstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C164CA26C434AA00A28E53 /* PetstagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetstagramApp.swift; sourceTree = "<group>"; };
 		05C164CC26C434AA00A28E53 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				05C1651326C4868700A28E53 /* UserAuthentication.swift */,
 				05C164F526C4367300A28E53 /* Post.swift */,
 				05C1652226C6DE3500A28E53 /* Feed.swift */,
+				0556231C26D14137005D2ACC /* Like.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				05C1651426C4868700A28E53 /* UserAuthentication.swift in Sources */,
 				05C1651626C486BA00A28E53 /* UserRequests.swift in Sources */,
 				05C1652326C6DE3500A28E53 /* Feed.swift in Sources */,
+				0556231D26D14137005D2ACC /* Like.swift in Sources */,
 				05C1652E26C8377300A28E53 /* TakePhotoViewController.swift in Sources */,
 				05C1653C26C854B600A28E53 /* ImageRequests.swift in Sources */,
 				05C164F626C4367300A28E53 /* Post.swift in Sources */,
