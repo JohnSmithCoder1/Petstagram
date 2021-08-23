@@ -97,8 +97,11 @@ struct FeedCell_Previews: PreviewProvider {
         
         return Group {
             FeedCell(post: post)
+                .previewDisplayName("Placeholder Image")
             FeedCell(post: post, postImage: UIImage(named: "friends")!)
+                .previewDisplayName("Unliked Post with Image")
             FeedCell(post: likedPost, postImage: UIImage(named: "friends")!)
+                .previewDisplayName("Liked Post with Image")
         }
         .previewLayout(.sizeThatFits)
     }
