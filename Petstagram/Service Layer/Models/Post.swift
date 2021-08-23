@@ -12,7 +12,7 @@ struct Post: Codable, Identifiable {
     var caption: String
     var createdAt: Date
     var createdByUser: String
-    var likedDate: Date?
+    var isLiked: Bool = false
     
     init(id: UUID? = nil, caption: String, createdAt: Date = Date(), createdBy: String = currentUser?.id ?? "") {
         self.id = id
