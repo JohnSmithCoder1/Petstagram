@@ -9,7 +9,7 @@ import SwiftUI
 import Combine
 
 struct FeedCell: View {
-    var post: Post
+    @Binding var post: Post
     let placeholderImage = UIImage(systemName: "photo")!
     @State var postImage: UIImage? = nil
     @State private var subscriptions: Set<AnyCancellable> = []
@@ -66,7 +66,7 @@ struct FeedCell: View {
         client.publisherForRequest(request)
             .sink(receiveCompletion: { result in
                 if case .finished = result {
-                    // TODO: update the post
+                    post.isLiked = true
                 }
             }, receiveValue: { _ in })
             .store(in: &subscriptions)
@@ -80,7 +80,7 @@ struct FeedCell: View {
         client.publisherForRequest(request)
             .sink(receiveCompletion: { result in
                 if case .finished = result {
-                    // TODO: update the post
+                    post.isLiked = false
                 }
             }, receiveValue: { _ in })
             .store(in: &subscriptions)
@@ -96,11 +96,12 @@ struct FeedCell_Previews: PreviewProvider {
         likedPost.isLiked = true
         
         return Group {
-            FeedCell(post: post)
+            // .constant() allows us to use the BINDING for post instead of passing post itself
+            FeedCell(post: .constant(post))
                 .previewDisplayName("Placeholder Image")
-            FeedCell(post: post, postImage: UIImage(named: "friends")!)
+            FeedCell(post: .constant(post), postImage: UIImage(named: "friends")!)
                 .previewDisplayName("Unliked Post with Image")
-            FeedCell(post: likedPost, postImage: UIImage(named: "friends")!)
+            FeedCell(post: .constant(likedPost), postImage: UIImage(named: "friends")!)
                 .previewDisplayName("Liked Post with Image")
         }
         .previewLayout(.sizeThatFits)
