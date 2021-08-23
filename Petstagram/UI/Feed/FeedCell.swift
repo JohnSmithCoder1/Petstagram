@@ -92,9 +92,13 @@ struct FeedCell_Previews: PreviewProvider {
         let createdDate = Date().advanced(by: TimeInterval(exactly: -5*60)!)
         let post = Post(caption: "can you code me up some food?", createdAt: createdDate, createdBy: "UserName")
         
+        var likedPost = post
+        likedPost.isLiked = true
+        
         return Group {
             FeedCell(post: post)
             FeedCell(post: post, postImage: UIImage(named: "friends")!)
+            FeedCell(post: likedPost, postImage: UIImage(named: "friends")!)
         }
         .previewLayout(.sizeThatFits)
     }
