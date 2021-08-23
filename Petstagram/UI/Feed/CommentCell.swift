@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CommentCell: View {
-    var post: Post
+    var comment: CommentProvider
 
     let formatter: RelativeDateTimeFormatter = {
         let formatter = RelativeDateTimeFormatter()
@@ -28,18 +28,18 @@ struct CommentCell: View {
                     .clipShape(Circle())
                 
                 VStack(alignment: .leading) {
-                    Text(post.createdByUser)
+                    Text(comment.createdByUser)
                         .font(.headline)
                         .foregroundColor(.accentGreen)
                     
-                    Text(formatter.localizedString(for: post.createdAt, relativeTo: Date()))
+                    Text(formatter.localizedString(for: comment.createdAt, relativeTo: Date()))
                         .font(.caption)
                 }
                 
                 Spacer()
             }
             
-            Text(post.caption)
+            Text(comment.caption)
         }
     }
 }
@@ -51,7 +51,7 @@ struct CommentCell_Previews: PreviewProvider {
         let user = "Jerry"
         let post = Post(caption: comment, createdAt: activity, createdBy: user)
         
-        return CommentCell(post: post)
+        return CommentCell(comment: post)
             .previewLayout(.sizeThatFits)
     }
 }

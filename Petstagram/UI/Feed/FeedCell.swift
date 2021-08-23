@@ -48,7 +48,7 @@ struct FeedCell: View {
                         .store(in: &subscriptions)
                 }
             
-            CommentCell(post: post)
+            CommentCell(comment: post)
         }
         // Prevents the cell from highlighting when selected
         .buttonStyle(PlainButtonStyle())

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Post: Codable, Identifiable {
+struct Post: Codable, Identifiable, CommentProvider {
     var id: UUID?
     var caption: String
     var createdAt: Date
