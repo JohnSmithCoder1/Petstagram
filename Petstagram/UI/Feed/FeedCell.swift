@@ -22,8 +22,8 @@ struct FeedCell: View {
                 .cornerRadius(15)
                 .overlay({
                     VStack(spacing: 15) {
-                        Button(action: {}) {
-                            Image("filled")
+                        Button(action: toggleLike) {
+                            Image(post.isLiked ? "like-filled" : "like-empty")
                         }
                         Button(action: {}) {
                             Image("comment")
@@ -52,6 +52,38 @@ struct FeedCell: View {
         }
         // Prevents the cell from highlighting when selected
         .buttonStyle(PlainButtonStyle())
+    }
+    
+    private func toggleLike() {
+        post.isLiked ? deleteLike() : addLike()
+    }
+    
+    private func addLike() {
+        guard let postId = post.id else { fatalError() }
+        let client = APIClient()
+        let request = AddLikeToPostRequest(postId: postId)
+        
+        client.publisherForRequest(request)
+            .sink(receiveCompletion: { result in
+                if case .finished = result {
+                    // TODO: update the post
+                }
+            }, receiveValue: { _ in })
+            .store(in: &subscriptions)
+    }
+    
+    private func deleteLike() {
+        guard let postId = post.id else { fatalError() }
+        let client = APIClient()
+        let request = DeleteLikeFromPostRequest(postId: postId)
+        
+        client.publisherForRequest(request)
+            .sink(receiveCompletion: { result in
+                if case .finished = result {
+                    // TODO: update the post
+                }
+            }, receiveValue: { _ in })
+            .store(in: &subscriptions)
     }
 }
 
