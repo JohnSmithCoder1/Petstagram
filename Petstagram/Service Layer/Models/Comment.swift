@@ -14,7 +14,7 @@ protocol CommentProvider {
     var caption: String { get }
 }
 
-struct Comment: Codable, CommentProvider {
+struct Comment: Codable, Identifiable, CommentProvider {
     var id: UUID?
     var postId: UUID
     var createdByUser: String
