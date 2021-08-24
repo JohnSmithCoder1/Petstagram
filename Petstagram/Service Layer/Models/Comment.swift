@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import KituraContracts
 
 protocol CommentProvider {
     var createdByUser: String { get }
@@ -27,4 +28,8 @@ struct Comment: Codable, CommentProvider {
         self.createdAt = createdAt
         self.caption = caption
     }
+}
+
+struct CommentParams: QueryParams {
+    var postId: String
 }
