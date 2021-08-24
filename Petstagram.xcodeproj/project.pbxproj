@@ -12,6 +12,7 @@
 		0556231D26D14137005D2ACC /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556231C26D14137005D2ACC /* Like.swift */; };
 		059CAE2926D41280008A0EAF /* LikeRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059CAE2826D41280008A0EAF /* LikeRequests.swift */; };
 		059CAE2D26D46556008A0EAF /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059CAE2C26D46556008A0EAF /* Comment.swift */; };
+		059CAE2F26D557BA008A0EAF /* CommentRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059CAE2E26D557BA008A0EAF /* CommentRequests.swift */; };
 		05C164CB26C434AA00A28E53 /* PetstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164CA26C434AA00A28E53 /* PetstagramApp.swift */; };
 		05C164CD26C434AA00A28E53 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164CC26C434AA00A28E53 /* MainView.swift */; };
 		05C164CF26C434AD00A28E53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C164CE26C434AD00A28E53 /* Assets.xcassets */; };
@@ -68,6 +69,7 @@
 		0556231C26D14137005D2ACC /* Like.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
 		059CAE2826D41280008A0EAF /* LikeRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeRequests.swift; sourceTree = "<group>"; };
 		059CAE2C26D46556008A0EAF /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		059CAE2E26D557BA008A0EAF /* CommentRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRequests.swift; sourceTree = "<group>"; };
 		05C164C726C434AA00A28E53 /* Petstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Petstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C164CA26C434AA00A28E53 /* PetstagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetstagramApp.swift; sourceTree = "<group>"; };
 		05C164CC26C434AA00A28E53 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				05C164F926C4387D00A28E53 /* PostRequests.swift */,
 				05C1653B26C854B600A28E53 /* ImageRequests.swift */,
 				059CAE2826D41280008A0EAF /* LikeRequests.swift */,
+				059CAE2E26D557BA008A0EAF /* CommentRequests.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -460,6 +463,7 @@
 				05C164F826C4373B00A28E53 /* APIRequest.swift in Sources */,
 				05C1653426C844DC00A28E53 /* CameraPreviewView.swift in Sources */,
 				05C1653A26C8526300A28E53 /* PostController.swift in Sources */,
+				059CAE2F26D557BA008A0EAF /* CommentRequests.swift in Sources */,
 				05C1652526C8175D00A28E53 /* FeedCell.swift in Sources */,
 				05C1652126C6DDB800A28E53 /* FeedView.swift in Sources */,
 				05C1652B26C8319100A28E53 /* UserData.swift in Sources */,
