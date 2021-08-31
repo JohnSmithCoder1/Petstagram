@@ -51,7 +51,7 @@ struct FeedCell: View {
                         .store(in: &subscriptions)
                 }
             NavigationLink(
-                destination: Text("New view"),
+                destination: CommentListView(forPostId: post.id ?? UUID(), image: postImage ?? placeholderImage),
                 isActive: $showComments,
                 label: {
                     EmptyView()
