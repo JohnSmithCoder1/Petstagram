@@ -22,7 +22,7 @@ struct CommentListView: View {
         displayList.comments.append(contentsOf: comments)
         
         // Since the type of list is changed by the StateObject property wrapper, we can't just set it directly in init
-        self._list = StateObject(wrappedValue: CommentList(forPostId: newId))
+        self._list = StateObject(wrappedValue: displayList)
         self.image = image
         self.postId = newId
     }
