@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0502501026DE842A00783101 /* CommentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0502500F26DE842A00783101 /* CommentListView.swift */; };
 		0540861D26CAC8340012EEB8 /* KituraContracts in Frameworks */ = {isa = PBXBuildFile; productRef = 0540861C26CAC8340012EEB8 /* KituraContracts */; };
 		0556208326CC2C9D005D2ACC /* TakePhotoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0556208226CC2C9D005D2ACC /* TakePhotoStoryboard.storyboard */; };
 		0556231D26D14137005D2ACC /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556231C26D14137005D2ACC /* Like.swift */; };
@@ -66,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0502500F26DE842A00783101 /* CommentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListView.swift; sourceTree = "<group>"; };
 		0556208226CC2C9D005D2ACC /* TakePhotoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TakePhotoStoryboard.storyboard; sourceTree = "<group>"; };
 		0556231C26D14137005D2ACC /* Like.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
 		059CAE2826D41280008A0EAF /* LikeRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeRequests.swift; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 				05C1652026C6DDB800A28E53 /* FeedView.swift */,
 				05C1652426C8175D00A28E53 /* FeedCell.swift */,
 				05C1652826C8296F00A28E53 /* CommentCell.swift */,
+				0502500F26DE842A00783101 /* CommentListView.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				05C164FE26C43ACF00A28E53 /* APIEnvironment.swift in Sources */,
 				05C1651226C4863C00A28E53 /* Color+Petstagram.swift in Sources */,
 				05C1653626C848B600A28E53 /* PhotoCaptureController.swift in Sources */,
+				0502501026DE842A00783101 /* CommentListView.swift in Sources */,
 				05C164FA26C4387D00A28E53 /* PostRequests.swift in Sources */,
 				05C164F826C4373B00A28E53 /* APIRequest.swift in Sources */,
 				05C1653426C844DC00A28E53 /* CameraPreviewView.swift in Sources */,
