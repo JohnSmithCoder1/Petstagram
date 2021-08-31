@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0502501026DE842A00783101 /* CommentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0502500F26DE842A00783101 /* CommentListView.swift */; };
+		0502501226DEAFB500783101 /* ChooseFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0502501126DEAFB500783101 /* ChooseFilterView.swift */; };
+		0502501426DEB15800783101 /* UIImage+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0502501326DEB15800783101 /* UIImage+Additions.swift */; };
 		0540861D26CAC8340012EEB8 /* KituraContracts in Frameworks */ = {isa = PBXBuildFile; productRef = 0540861C26CAC8340012EEB8 /* KituraContracts */; };
 		0556208326CC2C9D005D2ACC /* TakePhotoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0556208226CC2C9D005D2ACC /* TakePhotoStoryboard.storyboard */; };
 		0556231D26D14137005D2ACC /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556231C26D14137005D2ACC /* Like.swift */; };
@@ -68,6 +70,8 @@
 
 /* Begin PBXFileReference section */
 		0502500F26DE842A00783101 /* CommentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListView.swift; sourceTree = "<group>"; };
+		0502501126DEAFB500783101 /* ChooseFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseFilterView.swift; sourceTree = "<group>"; };
+		0502501326DEB15800783101 /* UIImage+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Additions.swift"; sourceTree = "<group>"; };
 		0556208226CC2C9D005D2ACC /* TakePhotoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TakePhotoStoryboard.storyboard; sourceTree = "<group>"; };
 		0556231C26D14137005D2ACC /* Like.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
 		059CAE2826D41280008A0EAF /* LikeRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeRequests.swift; sourceTree = "<group>"; };
@@ -273,6 +277,7 @@
 			children = (
 				05C1651C26C4A18500A28E53 /* AppTitle.swift */,
 				05C1651126C4863C00A28E53 /* Color+Petstagram.swift */,
+				0502501326DEB15800783101 /* UIImage+Additions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -304,6 +309,7 @@
 				0556208226CC2C9D005D2ACC /* TakePhotoStoryboard.storyboard */,
 				05C1653326C844DC00A28E53 /* CameraPreviewView.swift */,
 				05C1653526C848B600A28E53 /* PhotoCaptureController.swift */,
+				0502501126DEAFB500783101 /* ChooseFilterView.swift */,
 				05C1653726C850FC00A28E53 /* AddDescriptionView.swift */,
 				05C1653926C8526300A28E53 /* PostController.swift */,
 			);
@@ -453,6 +459,7 @@
 				059CAE2926D41280008A0EAF /* LikeRequests.swift in Sources */,
 				05C1651D26C4A18500A28E53 /* AppTitle.swift in Sources */,
 				05C1651426C4868700A28E53 /* UserAuthentication.swift in Sources */,
+				0502501226DEAFB500783101 /* ChooseFilterView.swift in Sources */,
 				05C1651626C486BA00A28E53 /* UserRequests.swift in Sources */,
 				05C1652326C6DE3500A28E53 /* Feed.swift in Sources */,
 				0556231D26D14137005D2ACC /* Like.swift in Sources */,
@@ -478,6 +485,7 @@
 				05C1653226C83D4E00A28E53 /* CreatePostView.swift in Sources */,
 				05C164CB26C434AA00A28E53 /* PetstagramApp.swift in Sources */,
 				05C164FC26C4397F00A28E53 /* APIClient.swift in Sources */,
+				0502501426DEB15800783101 /* UIImage+Additions.swift in Sources */,
 				059CAE2D26D46556008A0EAF /* Comment.swift in Sources */,
 				05C1652926C8296F00A28E53 /* CommentCell.swift in Sources */,
 			);

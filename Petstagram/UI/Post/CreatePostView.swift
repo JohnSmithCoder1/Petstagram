@@ -20,7 +20,7 @@ struct CreatePostView: View {
                 })
                 
                 NavigationLink(
-                    destination: AddDescriptionView(image: postImage),
+                    destination: ChooseFilterView(image: postImage),
                     isActive: $showNext) {
                     EmptyView()
                 }
