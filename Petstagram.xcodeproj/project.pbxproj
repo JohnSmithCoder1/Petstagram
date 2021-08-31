@@ -13,6 +13,7 @@
 		059CAE2926D41280008A0EAF /* LikeRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059CAE2826D41280008A0EAF /* LikeRequests.swift */; };
 		059CAE2D26D46556008A0EAF /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059CAE2C26D46556008A0EAF /* Comment.swift */; };
 		059CAE2F26D557BA008A0EAF /* CommentRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059CAE2E26D557BA008A0EAF /* CommentRequests.swift */; };
+		059CAE3526D56949008A0EAF /* CommentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059CAE3426D56949008A0EAF /* CommentList.swift */; };
 		05C164CB26C434AA00A28E53 /* PetstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164CA26C434AA00A28E53 /* PetstagramApp.swift */; };
 		05C164CD26C434AA00A28E53 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C164CC26C434AA00A28E53 /* MainView.swift */; };
 		05C164CF26C434AD00A28E53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C164CE26C434AD00A28E53 /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		059CAE2826D41280008A0EAF /* LikeRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeRequests.swift; sourceTree = "<group>"; };
 		059CAE2C26D46556008A0EAF /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		059CAE2E26D557BA008A0EAF /* CommentRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRequests.swift; sourceTree = "<group>"; };
+		059CAE3426D56949008A0EAF /* CommentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentList.swift; sourceTree = "<group>"; };
 		05C164C726C434AA00A28E53 /* Petstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Petstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C164CA26C434AA00A28E53 /* PetstagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetstagramApp.swift; sourceTree = "<group>"; };
 		05C164CC26C434AA00A28E53 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				05C1652226C6DE3500A28E53 /* Feed.swift */,
 				0556231C26D14137005D2ACC /* Like.swift */,
 				059CAE2C26D46556008A0EAF /* Comment.swift */,
+				059CAE3426D56949008A0EAF /* CommentList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				05C1652E26C8377300A28E53 /* TakePhotoViewController.swift in Sources */,
 				05C1653C26C854B600A28E53 /* ImageRequests.swift in Sources */,
 				05C164F626C4367300A28E53 /* Post.swift in Sources */,
+				059CAE3526D56949008A0EAF /* CommentList.swift in Sources */,
 				05C164CD26C434AA00A28E53 /* MainView.swift in Sources */,
 				05C1653826C850FC00A28E53 /* AddDescriptionView.swift in Sources */,
 				05C1650F26C485FC00A28E53 /* LoginSignupView.swift in Sources */,
