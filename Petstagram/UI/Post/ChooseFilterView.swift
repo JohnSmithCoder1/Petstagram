@@ -60,6 +60,7 @@ struct ChooseFilterView: View {
             .padding(.horizontal)
             .background(Color.white)
         }
+        .navigationBarHidden(true)
     }
 }
 

@@ -18,6 +18,7 @@ struct CreatePostView: View {
                     postImage = image
                     showNext = true
                 })
+                .navigationBarHidden(true)
                 
                 NavigationLink(
                     destination: ChooseFilterView(image: postImage),
