@@ -12,6 +12,7 @@ struct FeedCell: View {
     @Binding var post: Post
     let placeholderImage = UIImage(systemName: "photo")!
     @State var postImage: UIImage? = nil
+    @State private var showComments = false
     @State private var subscriptions: Set<AnyCancellable> = []
     
     var body: some View {
@@ -25,7 +26,9 @@ struct FeedCell: View {
                         Button(action: toggleLike) {
                             Image(post.isLiked ? "like-filled" : "like-empty")
                         }
-                        Button(action: {}) {
+                        Button(action: {
+                            showComments = true
+                        }) {
                             Image("comment")
                         }
                         Button(action: {}) {
@@ -47,6 +50,12 @@ struct FeedCell: View {
                         }
                         .store(in: &subscriptions)
                 }
+            NavigationLink(
+                destination: Text("New view"),
+                isActive: $showComments,
+                label: {
+                    EmptyView()
+                })
             
             CommentCell(comment: post)
         }
@@ -96,13 +105,19 @@ struct FeedCell_Previews: PreviewProvider {
         likedPost.isLiked = true
         
         return Group {
-            // .constant() allows us to use the BINDING for post instead of passing post itself
-            FeedCell(post: .constant(post))
-                .previewDisplayName("Placeholder Image")
-            FeedCell(post: .constant(post), postImage: UIImage(named: "friends")!)
-                .previewDisplayName("Unliked Post with Image")
-            FeedCell(post: .constant(likedPost), postImage: UIImage(named: "friends")!)
-                .previewDisplayName("Liked Post with Image")
+            NavigationView {
+                // .constant() allows us to use the BINDING for post instead of passing post itself
+                FeedCell(post: .constant(post))
+                    .previewDisplayName("Placeholder Image")
+            }
+            NavigationView {
+                FeedCell(post: .constant(post), postImage: UIImage(named: "friends")!)
+                    .previewDisplayName("Unliked Post with Image")
+            }
+            NavigationView {
+                FeedCell(post: .constant(likedPost), postImage: UIImage(named: "friends")!)
+                    .previewDisplayName("Liked Post with Image")
+            }
         }
         .previewLayout(.sizeThatFits)
     }

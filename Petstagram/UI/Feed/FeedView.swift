@@ -11,10 +11,13 @@ struct FeedView: View {
     @StateObject var feed = Feed()
     
     var body: some View {
-        List {
-            ForEach(feed.posts.indices, id: \.self) { index in
-                FeedCell(post: $feed.posts[index])
+        NavigationView {
+            List {
+                ForEach(feed.posts.indices, id: \.self) { index in
+                    FeedCell(post: $feed.posts[index])
+                }
             }
+            .navigationBarHidden(true)
         }
     }
 }
