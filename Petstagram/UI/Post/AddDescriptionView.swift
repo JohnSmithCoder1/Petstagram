@@ -12,6 +12,7 @@ struct AddDescriptionView: View {
     @State var description = ""
     @StateObject private var controller = PostController()
     @EnvironmentObject var userData: UserData
+    @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -29,6 +30,13 @@ struct AddDescriptionView: View {
             Spacer()
             
             HStack {
+                Button(action: {
+                    presentationMode.wrappedValue.dismiss()
+                }, label: {
+                    Image(systemName: "chevron.left")
+                })
+                .foregroundColor(.accentGreen)
+                
                 Spacer()
                 
                 ZStack {
@@ -53,9 +61,9 @@ struct AddDescriptionView: View {
                     }
                 }
             }
-            .padding(.vertical)
         }
-        .padding(.horizontal)
+        .padding()
+        .navigationBarHidden(true)
     }
 }
 
