@@ -158,7 +158,7 @@ extension PhotoCaptureController: AVCapturePhotoCaptureDelegate {
             print("Error processing photo: \(error)")
         } else {
             if let photoData = photo.fileDataRepresentation(), let rawImage = UIImage(data: photoData) {
-                outputImage = rawImage
+                outputImage = rawImage.fixedOrientation()
             } else {
                 outputImage = nil
             }

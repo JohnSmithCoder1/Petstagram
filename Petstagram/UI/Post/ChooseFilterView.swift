@@ -16,8 +16,50 @@ struct ChooseFilterView: View {
     @State private var allImages: [UIImage]
     @State private var selectedImage: UIImage
     
+    init(image: UIImage) {
+        self.image = image
+        self._allImages = State(initialValue: image.filteredImages(filters: filters))
+        self._selectedImage = State(initialValue: image)
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image(uiImage: selectedImage)
+                .resizable()
+                .scaledToFill()
+                .overlay(
+                    HStack {
+                        Spacer()
+                        
+                        NavigationLink("Next", destination: AddDescriptionView(image: selectedImage))
+                            .padding(.horizontal)
+                            .padding(.vertical, 4)
+                            .background(Color.white)
+                            .foregroundColor(.accentGreen)
+                    }
+                    .padding()
+                    ,
+                    alignment: .bottom
+                )
+            HStack {
+                ForEach(allImages, id: \.self) { filteredImage in
+                    Button(action: {
+                        self.selectedImage = filteredImage
+                    }, label: {
+                        Image(uiImage: filteredImage)
+                            .renderingMode(.original)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 80)
+                    })
+                }
+                
+                Spacer()
+            }
+            .frame(height: 166)
+            .padding(.horizontal)
+            .background(Color.white)
+        }
     }
 }
 
