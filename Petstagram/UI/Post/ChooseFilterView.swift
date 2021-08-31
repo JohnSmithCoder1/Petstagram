@@ -16,6 +16,9 @@ struct ChooseFilterView: View {
     @State private var allImages: [UIImage]
     @State private var selectedImage: UIImage
     
+    // Will use this for custom Back button
+    @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
+    
     init(image: UIImage) {
         self.image = image
         self._allImages = State(initialValue: image.filteredImages(filters: filters))
@@ -29,6 +32,13 @@ struct ChooseFilterView: View {
                 .scaledToFill()
                 .overlay(
                     HStack {
+                        Button(action: {
+                            presentationMode.wrappedValue.dismiss()
+                        }, label: {
+                            Image(systemName: "chevron.left")
+                        })
+                        .foregroundColor(.white)
+                        
                         Spacer()
                         
                         NavigationLink("Next", destination: AddDescriptionView(image: selectedImage))
