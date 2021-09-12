@@ -42,6 +42,23 @@ class TakePhotoViewController: UIViewController {
     @IBAction func shutterButtonTapped() {
         captureController.capturePhoto()
     }
+    
+    @IBAction func libraryButtonTapped() {
+        let picker = UIImagePickerController()
+        picker.sourceType = .photoLibrary
+        picker.modalTransitionStyle = .crossDissolve
+        picker.delegate = self
+        present(picker, animated: true)
+    }
+}
+
+extension TakePhotoViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            completionHandler(image)
+            dismiss(animated: true)
+        }
+    }
 }
 
 // wrapper to make SwiftUI View
