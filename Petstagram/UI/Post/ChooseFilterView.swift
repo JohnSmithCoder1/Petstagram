@@ -29,7 +29,7 @@ struct ChooseFilterView: View {
         VStack {
             Image(uiImage: selectedImage)
                 .resizable()
-                .scaledToFill()
+                .scaledToFit()
                 .overlay(
                     HStack {
                         Button(action: {
@@ -78,6 +78,10 @@ struct ChooseFilterView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             ChooseFilterView(image: UIImage(named: "wanna_play")!)
+        }
+        
+        NavigationView {
+            ChooseFilterView(image: UIImage(named: "puppies")!)
         }
     }
 }
