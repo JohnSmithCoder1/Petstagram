@@ -11,7 +11,6 @@
 		0502501226DEAFB500783101 /* ChooseFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0502501126DEAFB500783101 /* ChooseFilterView.swift */; };
 		0502501426DEB15800783101 /* UIImage+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0502501326DEB15800783101 /* UIImage+Additions.swift */; };
 		0540861D26CAC8340012EEB8 /* KituraContracts in Frameworks */ = {isa = PBXBuildFile; productRef = 0540861C26CAC8340012EEB8 /* KituraContracts */; };
-		0556208326CC2C9D005D2ACC /* TakePhotoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0556208226CC2C9D005D2ACC /* TakePhotoStoryboard.storyboard */; };
 		0556231D26D14137005D2ACC /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556231C26D14137005D2ACC /* Like.swift */; };
 		059CAE2926D41280008A0EAF /* LikeRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059CAE2826D41280008A0EAF /* LikeRequests.swift */; };
 		059CAE2D26D46556008A0EAF /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059CAE2C26D46556008A0EAF /* Comment.swift */; };
@@ -49,6 +48,7 @@
 		05C1653826C850FC00A28E53 /* AddDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1653726C850FC00A28E53 /* AddDescriptionView.swift */; };
 		05C1653A26C8526300A28E53 /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1653926C8526300A28E53 /* PostController.swift */; };
 		05C1653C26C854B600A28E53 /* ImageRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1653B26C854B600A28E53 /* ImageRequests.swift */; };
+		05DD52EE26EE731A0091290B /* TakePhotoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05DD52ED26EE731A0091290B /* TakePhotoStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +72,6 @@
 		0502500F26DE842A00783101 /* CommentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListView.swift; sourceTree = "<group>"; };
 		0502501126DEAFB500783101 /* ChooseFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseFilterView.swift; sourceTree = "<group>"; };
 		0502501326DEB15800783101 /* UIImage+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Additions.swift"; sourceTree = "<group>"; };
-		0556208226CC2C9D005D2ACC /* TakePhotoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TakePhotoStoryboard.storyboard; sourceTree = "<group>"; };
 		0556231C26D14137005D2ACC /* Like.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
 		059CAE2826D41280008A0EAF /* LikeRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeRequests.swift; sourceTree = "<group>"; };
 		059CAE2C26D46556008A0EAF /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
@@ -115,6 +114,7 @@
 		05C1653726C850FC00A28E53 /* AddDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDescriptionView.swift; sourceTree = "<group>"; };
 		05C1653926C8526300A28E53 /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
 		05C1653B26C854B600A28E53 /* ImageRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequests.swift; sourceTree = "<group>"; };
+		05DD52ED26EE731A0091290B /* TakePhotoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TakePhotoStoryboard.storyboard; path = "../../../../Petstagram Tutorial Files/38-add-image-from-photo-library/final/Petstagram/Petstagram/UI/Post/TakePhotoStoryboard.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,7 +306,7 @@
 			children = (
 				05C1653126C83D4E00A28E53 /* CreatePostView.swift */,
 				05C1652D26C8377300A28E53 /* TakePhotoViewController.swift */,
-				0556208226CC2C9D005D2ACC /* TakePhotoStoryboard.storyboard */,
+				05DD52ED26EE731A0091290B /* TakePhotoStoryboard.storyboard */,
 				05C1653326C844DC00A28E53 /* CameraPreviewView.swift */,
 				05C1653526C848B600A28E53 /* PhotoCaptureController.swift */,
 				0502501126DEAFB500783101 /* ChooseFilterView.swift */,
@@ -429,7 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05C1651926C4A0CF00A28E53 /* CoolStoryregular.ttf in Resources */,
-				0556208326CC2C9D005D2ACC /* TakePhotoStoryboard.storyboard in Resources */,
+				05DD52EE26EE731A0091290B /* TakePhotoStoryboard.storyboard in Resources */,
 				05C164D226C434AD00A28E53 /* Preview Assets.xcassets in Resources */,
 				05C164CF26C434AD00A28E53 /* Assets.xcassets in Resources */,
 			);

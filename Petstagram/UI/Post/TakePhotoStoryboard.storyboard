@@ -3,7 +3,10 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,10 +32,29 @@
                                             <action selector="shutterButtonTapped" destination="Dpq-rx-hw1" eventType="touchUpInside" id="W0x-18-KkA"/>
                                         </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y1E-4Y-8ym">
+                                        <rect key="frame" x="-8" y="19" width="165" height="128"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92w-wS-nCf">
+                                                <rect key="frame" x="95" y="39" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="GKW-JP-q4N"/>
+                                                    <constraint firstAttribute="width" constant="50" id="esI-zB-Cbr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="tintColor" name="accentGreen"/>
+                                                <state key="normal" title="Button">
+                                                    <imageReference key="image" image="photo.on.rectangle" catalog="system" symbolScale="large"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="cIE-nG-rm0" firstAttribute="centerY" secondItem="eWZ-vB-K3o" secondAttribute="centerY" id="4y8-ht-6gK"/>
+                                    <constraint firstItem="cIE-nG-rm0" firstAttribute="centerX" secondItem="eWZ-vB-K3o" secondAttribute="centerX" id="5TH-eL-MV2"/>
                                     <constraint firstItem="cIE-nG-rm0" firstAttribute="centerX" secondItem="eWZ-vB-K3o" secondAttribute="centerX" id="Fxg-gK-PeL"/>
                                     <constraint firstAttribute="height" constant="166" id="VbL-hc-TwY"/>
                                 </constraints>
@@ -42,6 +64,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="KJm-A6-c4s" firstAttribute="top" secondItem="j49-WH-Jc6" secondAttribute="top" id="2fH-0s-2Yw"/>
+                            <constraint firstItem="j49-WH-Jc6" firstAttribute="leading" secondItem="y1E-4Y-8ym" secondAttribute="leading" constant="8" id="3uh-Hb-RZ5"/>
                             <constraint firstItem="eWZ-vB-K3o" firstAttribute="top" secondItem="KJm-A6-c4s" secondAttribute="bottom" id="IsC-zb-eaE"/>
                             <constraint firstItem="KJm-A6-c4s" firstAttribute="trailing" secondItem="j49-WH-Jc6" secondAttribute="trailing" id="LOp-ie-dx1"/>
                             <constraint firstItem="eWZ-vB-K3o" firstAttribute="leading" secondItem="j49-WH-Jc6" secondAttribute="leading" id="N4W-v1-a41"/>
@@ -61,6 +84,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="photo.on.rectangle" catalog="system" width="128" height="96"/>
         <image name="take-photo" width="98" height="98"/>
+        <namedColor name="accentGreen">
+            <color red="0.046999998390674591" green="0.6589999794960022" blue="0.46700000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
