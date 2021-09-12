@@ -37,7 +37,7 @@ struct FeedCell: View {
                         }) {
                             Image("share")
                         }
-                        .sheet(isPresented: $showShareSheet {
+                        .sheet(isPresented: $showShareSheet) {
                             createShareSheet()
                         }
                     }
