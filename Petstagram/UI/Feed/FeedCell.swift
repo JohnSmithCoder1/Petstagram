@@ -13,6 +13,7 @@ struct FeedCell: View {
     let placeholderImage = UIImage(systemName: "photo")!
     @State var postImage: UIImage? = nil
     @State private var showComments = false
+    @State private var showShareSheet = false
     @State private var subscriptions: Set<AnyCancellable> = []
     
     var body: some View {
@@ -31,8 +32,13 @@ struct FeedCell: View {
                         }) {
                             Image("comment")
                         }
-                        Button(action: {}) {
+                        Button(action: {
+                            showShareSheet = true
+                        }) {
                             Image("share")
+                        }
+                        .sheet(isPresented: $showShareSheet {
+                            createShareSheet()
                         }
                     }
                     .padding()
@@ -61,6 +67,20 @@ struct FeedCell: View {
         }
         // Prevents the cell from highlighting when selected
         .buttonStyle(PlainButtonStyle())
+    }
+    
+    private func createShareSheet() -> ShareSheet {
+        var items: [Any] = []
+        
+        if let image = postImage {
+            items.append(image)
+        }
+        
+        if !post.caption.isEmpty {
+            items.append(post.caption)
+        }
+        
+        return ShareSheet(activityItems: items)
     }
     
     private func toggleLike() {
