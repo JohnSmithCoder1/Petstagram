@@ -49,6 +49,7 @@
 		05C1653A26C8526300A28E53 /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1653926C8526300A28E53 /* PostController.swift */; };
 		05C1653C26C854B600A28E53 /* ImageRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1653B26C854B600A28E53 /* ImageRequests.swift */; };
 		05DD52EE26EE731A0091290B /* TakePhotoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05DD52ED26EE731A0091290B /* TakePhotoStoryboard.storyboard */; };
+		05DD52F226EE78D60091290B /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DD52F126EE78D60091290B /* ShareSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		05C1653926C8526300A28E53 /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
 		05C1653B26C854B600A28E53 /* ImageRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequests.swift; sourceTree = "<group>"; };
 		05DD52ED26EE731A0091290B /* TakePhotoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TakePhotoStoryboard.storyboard; path = "../../../../Petstagram Tutorial Files/38-add-image-from-photo-library/final/Petstagram/Petstagram/UI/Post/TakePhotoStoryboard.storyboard"; sourceTree = "<group>"; };
+		05DD52F126EE78D60091290B /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +298,7 @@
 				05C1652026C6DDB800A28E53 /* FeedView.swift */,
 				05C1652426C8175D00A28E53 /* FeedCell.swift */,
 				05C1652826C8296F00A28E53 /* CommentCell.swift */,
+				05DD52F126EE78D60091290B /* ShareSheet.swift */,
 				0502500F26DE842A00783101 /* CommentListView.swift */,
 			);
 			path = Feed;
@@ -466,6 +469,7 @@
 				05C1652E26C8377300A28E53 /* TakePhotoViewController.swift in Sources */,
 				05C1653C26C854B600A28E53 /* ImageRequests.swift in Sources */,
 				05C164F626C4367300A28E53 /* Post.swift in Sources */,
+				05DD52F226EE78D60091290B /* ShareSheet.swift in Sources */,
 				059CAE3526D56949008A0EAF /* CommentList.swift in Sources */,
 				05C164CD26C434AA00A28E53 /* MainView.swift in Sources */,
 				05C1653826C850FC00A28E53 /* AddDescriptionView.swift in Sources */,
